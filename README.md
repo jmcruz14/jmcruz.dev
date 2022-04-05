@@ -10,7 +10,8 @@
 ### Description
 This is my portfolio of code which contains the following work done from class and my free time:
 
-**Project 1:**: 
+**Project 1:
+
 **Project 2: Journal Entry Frequency Visualization**
 * Analyzed my own journal entry database containing data on over 350 entry titles, date and time of writing, and journal number written from 2014 to 2021
 * Employed matplotlib, seaborn, and pandas to generate, sort, and visualize the data in question
