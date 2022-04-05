@@ -8,7 +8,7 @@
 * Built a client facing API using flask 
 
 ### Description
-This is my portfolio of code which contains the following work done from class and my free time:
+Attached are a sample of works and projects done from my class and my free time at home!
 
 ## [Project 1: Image Classifier for the MNIST Fashion Dataset](https://github.com/jmcruz14/jay-cruz-code-folio-2022/tree/main/PROJECT-1)
 * Built a program that predicts the type of clothing shown on-screen as part of a requirement for a Data Science and Analytics course
