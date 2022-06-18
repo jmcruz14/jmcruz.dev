@@ -4,27 +4,26 @@
 ### Description
 Attached are a sample of works and projects done from my class and my free time at home!
 
-## [Project 1: Image Classifier for the MNIST Fashion Dataset](https://github.com/jmcruz14/jay-cruz-code-folio-2022/tree/main/PROJECT-1)
+## [Project 1: Image Classifier for the MNIST Fashion Dataset](https://github.com/jmcruz14/jay-cruz-code-folio-2022/tree/main/image_classifier_project)
 * Built a program that predicts the type of clothing shown on-screen as part of a requirement for a Data Science and Analytics course
 * Employed the tensorflow python module to import the image and build the appropriate convolutional neural network for the project
 * Additional modules were pandas, numpy, and matplotlib
 * Utilized 8 neural network layers of 5 types (Conv2D, MaxPool2D, Flatten, Dense, Dropout) for the model to be trained for 10 iterations with a stop function in case the value change for 2 iterations remained the same
 * Sample of predicted results were printed out via a Python list
 
-![](/PROJECT-1/image-classifier-code-snippet.png)
+![](/image_classifier_project/image-classifier-code-snippet.png)
 
-## [Project 2: Predictive Model for Spam and Legit Messages](https://github.com/jmcruz14/jay-cruz-code-folio-2022/tree/main/PROJECT-2)
+## [Project 2: Predictive Model for Spam and Legit Messages](https://github.com/jmcruz14/jay-cruz-code-folio-2022/tree/main/predictive_text_modelling)
 * Built a predictive model that determines whether a message is a 'spam' message or a legitimate one for a Data Science and Analytics course
 * Dataset employed contained a sample of 5,572 SMS texts to be parsed over by the model
 * Employed pandas, numpy, and tensorflow to clean up the data and tokenize into entries which were fed into a constructed Neural Network
 * Neural Network was trained for 15 epochs before being tested for accuracy over a sample data obtained from 5,572 SMS texts
 
-![](/PROJECT-2/spam-legit-confusionmatrix.png)
+![](/predictive_text_modelling/spam-legit-confusionmatrix.png)
 
-## [Project 3: Journal Entry Frequency Visualization](https://github.com/jmcruz14/jay-cruz-code-folio-2022/tree/main/PROJECT-3)
-* Analyzed my own journal entry database containing data on over 350 entry titles, date and time of writing, and journal number written from 2014 to 2021
-* Employed Python's matplotlib, seaborn, and pandas modules to generate, sort, and visualize the data in question
-* Utilized aggregated bar graphs arranged vertically according to the hour of writing and horizontally according to the minute of writing to visually determine what times of the day I'd write about my day
+## [Project 3: Route Optimization Program Using TSP Algorithm](https://github.com/jmcruz14/jay-cruz-code-folio-2022/tree/main/route_optimizer_capstone)
+* For a capstone requirement, was tasked with developing a program which parses through ≤15 addresses via Dash Plotly in Python
+* Stack consists of Dash (front-end visualization and back-end routing), Dash-Leaflet (map visualization), and API Stack consisting of Mapquest and Google keys
 
 ![](/PROJECT-3/journalfreq_graph-smaller.png)
 
