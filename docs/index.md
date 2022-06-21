@@ -25,7 +25,7 @@ Attached are a sample of works and projects done from my class and my free time 
 * For a capstone requirement, was tasked with developing a program which parses through ≤15 addresses via Dash Plotly in Python
 * Stack consists of Dash (front-end visualization and back-end routing), Dash-Leaflet (map visualization), and API Stack consisting of Mapquest and Google keys
 
-![](/PROJECT-3/journalfreq_graph-smaller.png)
+![](/route_optimizer_capstone/route_optimizer_preview.png)
 
 ## [Project 4: Pet Clinic Application Constructed in Dash](https://github.com/jmcruz14/jay-cruz-code-folio-2022/tree/main/PROJECT-4)
 * Developed a hypothetical pet clinic website as a requirement of a project in a course on Information Systems
