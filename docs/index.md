@@ -27,11 +27,12 @@ Attached are a sample of works and projects done from my class and my free time 
 
 ![](/PROJECT-3/journalfreq_graph-smaller.png)
 
-## [Project 4: Ramen Dataset Analysis](https://github.com/jmcruz14/jay-cruz-code-folio-2022/tree/main/PROJECT-4)
-* Analyzed a sample dataset of Ramen reviews from all over the world for a Data Science and Analytics course
-* Identified the frequency of countries with Top 10 Ramen products, the average rating of Ramen products according to style specialty, and the ratings distribution of Nissin Ramen products
-* Utilized matplotlib, seaborn, and pandas modules for data visualization and cleaning
+## [Project 4: Pet Clinic Application Constructed in Dash](https://github.com/jmcruz14/jay-cruz-code-folio-2022/tree/main/PROJECT-4)
+* Developed a hypothetical pet clinic website as a requirement of a project in a course on Information Systems
+* Primarily built using Dash framework, with Bootstrap CSS used as part of the front-end and PostgreSQL for database storage
+* Utilized pandas and matplotlib for developing graph and chart visualization
 
 ![](/PROJECT-4/ramen_rating_nissin-dist.png)
 ![](/PROJECT-4/ramen_rating_style.png)
 ![](/PROJECT-4/ramen_rating_top-10.png)
+
