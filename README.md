@@ -1,5 +1,4 @@
 # Juan Carlos Cruz – Code Portfolio
-##### Note: Develop the Portfolio into a fully functioning website
 
 ### Description
 Attached are a sample of works and projects done from my class and my free time at home!
@@ -25,13 +24,11 @@ Attached are a sample of works and projects done from my class and my free time 
 * For a capstone requirement, was tasked with developing a program which parses through ≤15 addresses via Dash Plotly in Python
 * Stack consists of Dash (front-end visualization and back-end routing), Dash-Leaflet (map visualization), and API Stack consisting of Mapquest and Google keys
 
-![](/PROJECT-3/journalfreq_graph-smaller.png)
+![](https://github.com/jmcruz14/jmcruz14.github.io/raw/main/route_optimizer_capstone/route_optimizer_preview.png)
 
-## [Project 4: Pet Clinic Application Constructed in Dash](https://github.com/jmcruz14/jay-cruz-code-folio-2022/tree/main/PROJECT-4)
+## [Project 4: Pet Clinic Application Constructed in Dash](https://github.com/jmcruz14/jay-cruz-code-folio-2022/tree/main/pet_clinic_IS_project)
 * Developed a hypothetical pet clinic website as a requirement of a project in a course on Information Systems
 * Primarily built using Dash framework, with Bootstrap CSS used as part of the front-end and PostgreSQL for database storage
 * Utilized pandas and matplotlib for developing graph and chart visualization
 
-![](/PROJECT-4/ramen_rating_nissin-dist.png)
-![](/PROJECT-4/ramen_rating_style.png)
-![](/PROJECT-4/ramen_rating_top-10.png)
+![](https://github.com/jmcruz14/jmcruz14.github.io/blob/main/pet_clinic_IS_project/pet_clinic_IS_app_preview.png)
