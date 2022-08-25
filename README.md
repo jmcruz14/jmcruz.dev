@@ -27,7 +27,7 @@ Attached are a sample of works and projects done from my class and my free time 
 
 ![](/PROJECT-3/journalfreq_graph-smaller.png)
 
-## [Project 4: Pet Clinic Application Constructed in Dash](https://github.com/jmcruz14/jay-cruz-code-folio-2022/tree/main/pet-clinic-project)
+## [Project 4: Pet Clinic Application Constructed in Dash](https://github.com/jmcruz14/jay-cruz-code-folio-2022/tree/main/pet-clinic-IS-project)
 * Developed a hypothetical pet clinic website as a requirement of a project in a course on Information Systems
 * Primarily built using Dash framework, with Bootstrap CSS used as part of the front-end and PostgreSQL for database storage
 * Utilized pandas and matplotlib for developing graph and chart visualization
