@@ -1,5 +1,4 @@
 # Juan Carlos Cruz – Code Portfolio
-##### Note: Develop the Portfolio into a fully functioning website
 
 ### Description
 Attached are a sample of works and projects done from my class and my free time at home!
