@@ -1,7 +1,7 @@
 const currentUrl = window.location.href;
 
 // Check if the current URL ends with "index.html"
-if (currentUrl.endsWith("index.html")) {
+if (currentUrl.endsWith("index.html") || currentUrl.endsWith("/")) {
     // If yes, set the text-decoration of the element with href "index.html" to "underline"
     // since we currently have two html files in the root directory
     // simple if-else statement is fine
