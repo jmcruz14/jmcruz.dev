@@ -1,28 +1,13 @@
-// this is a jquery code ... lol
-// $(".nav__link")
-//     .on("mouseover", function() {
-//         $(".nav__link")
-//             .css("text-decoration", underline);
+const currentUrl = window.location.href;
 
-//         // $(this)
-//         //     .css("opacity", 1.0)
-//         //     .css("transform", "scale(1.05)")
-//     })
-//     .on("mouseout", function() {
-//         $(".nav__link")
-//             .css("opacity", 0.8)
-//             .css("transform", "scale(1.0)")
-
-//     });
-
-// var currentPage = window.location.href;
-
-// var links = document.getElementsByClassName('nav__link');
-
-// for (var i = 0; i < links.length; i++) {
-//   var link = links[i];
+// Check if the current URL ends with "index.html"
+if (currentUrl.endsWith("index.html")) {
+    // If yes, set the text-decoration of the element with href "index.html" to "underline"
+    // since we currently have two html files in the root directory
+    // simple if-else statement is fine
+    document.querySelector("a[href='index.html']").style.textDecoration = "underline";
+  } else {
+    // If not, set the text-decoration of the element with ID "my-link" to "none"
+    document.querySelector("a[href='works.html']").style.textDecoration = "underline";
+  }
   
-//   if (link.href === currentPage) {
-//     link.style.textDecoration = 'underline';
-//   }
-// }
