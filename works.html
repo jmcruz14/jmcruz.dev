@@ -1,163 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&family=Inter:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&family=Raleway&family=Roboto:wght@100&display=swap" rel="stylesheet">   
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jay Cruz's developer portfolio website where you can check out a summary of his personal works.">
+  <meta name="robots" content="all">
+  <meta name="keywords" content="Data Scientist, Data Analytics, Software Engineer">
 
-    <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="mod_style.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&family=Inter:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&family=Raleway&family=Roboto:wght@100&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/97eafd2cc3.js" crossorigin="anonymous"></script>
-    
-    <link rel="icon" href="images/jclogofix-smaller.svg">
-    <title>Jay Cruz Portfolio</title>
-
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/jclogofix-smaller.svg">
+  <title>Jay Cruz Portfolio</title>
 </head>
-<body>
-    <div class="header">
-        <div class="header-name">
-            <!-- <b class="fa-solid fa-user"></b> -->
+<body class="works">
+
+    <header class="title-bar">
+            <hgroup>
+          <h1>
             Jay Cruz
-        </div>
-        <div class="subheader-name">
+          </h1>
+          <h3>
             Python Developer
-        </div>
-            <br>
-                <a title="LinkedIn" href="https://www.linkedin.com/in/juan-carlos-c-54530b16b/" target="_blank"><img src="images/linkedin-logo.png" alt="" class="icon-size"></a>
-                <a title="GitHub" href="https://github.com/jmcruz14" target="_blank" rel="noopener noreferrer"><img src="images/github_icon.svg" alt="" class="icon-size"></a>
-                <a title="Email" href="mailto:jccruz009@yahoo.com" target="_blank"><img src="images/email_icon.png" alt="" class="icon-size"></a>
-        </div>
-    </div>
-
-    <div class="container">
-        
-        <div class="work-contents">
-            <img src="images/ritual.png" alt="" class="project-thumbnail">
-            <div class="project-info">
-                <div class="project-title">
-                    Video Color Analyzer
-                </div>
-                <div class="project-date">
-                    April 18, 2023
-                </div>
+          </h3>
+        </hgroup>
     
-                <div class="project-desc">
-                    Python script using OpenCV-Python, Pillow, and various preprocessing & processing packages to return
-                    the most frequent colors in a video file.
-                </div>
-
-                <div class="button-href">
-                    <div class="button github-repo">
-                        <a href="https://github.com/jmcruz14/dominant_color_analyzer">GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="work-contents">
-            <img src="images/top_250.jpeg" alt="Top 250 Filipino Movies on Letterboxd" class="project-thumbnail">
-            <div class="project-info">
-                <div class="project-title">
-                    Analysis of the Top 250 Filipino Movies on Letterboxd
-                </div>
-                <div class="project-date">
-                    March 29, 2023
-                </div>
-
-                <div class="project-desc">
-                    An Exploratory Data Analysis of the &#8217;Top 250 Filipino Movies&#8217; on social media website Letterboxd.
-                </div>
-
-                <div class="button-href">
-                    <div class="button github-repo">
-                        <a href="https://github.com/jmcruz14/top_250_filipino_eda">GitHub</a>
-                    </div>
-                    
-                    <!-- <div class="button blog-post">
-                        <a href="https://github.com/jmcruz14/top_250_filipino_eda">Blog</a>
-                    </div> -->
-                
-                </div>
-
-                
-
-            </div>
-        </div>
-
-        <div class="work-contents">
-            <img src="images/phr4r_logo.png" alt="r/phr4r Logo" class="project-thumbnail">
-            <div class="project-info">
-                <div class="project-title">
-                    r/phr4r webscrape and analysis
-                </div>
-                <div class="project-date">
-                    July 15, 2022
-                </div>
-
-                <div class="project-desc">
-                    A study of the r/phr4r subreddit's demographics and other
-                    observable trends through data webscraped from June to June of 2022. Data webscraped
-                    using the pRAW package and analyzed with pandas and matplotlib.
-                </div>
-
-                <div class="button-href">
-
-                    <div class="button github-repo">
-                        <a href="https://github.com/jmcruz14/r4r_webscraper_app">GitHub</a>
-                    </div>
-
-                    <div class="button blog-post">
-                        <a href="https://medium.com/@carlczech/the-underlying-trends-of-phr4r-515314ceed43">Blog</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Works
-        
-        include a works header?-->
-
-        <div class="work-contents">
-            <img src="images/geospatial_image.jpg" alt="" class="project-thumbnail">
-            <div class="project-info">
-                <div class="project-title">
-                    Route Optimizer Program for Last-Mile Delivery
-                </div>
-                <div class="project-date">
-                    June 2022
-                </div>
-
-                <div class="project-desc">
-                    Geospatial Navigation program utilizing Google Geocoder and MapQuest APIs using Dash Plotly framework.
-                </div>
-            </div>
-        </div>
-        
-
-    </div>
-
-    <!-- References -->
-    <nav class="nav" role="navigation">
-        <ul class="nav__list">
-           
-            <li class="nav__link">
-              <a href="index.html" class="nav-text">About Me</a>
+        <nav class="personal-links">
+          <ul>
+            <li>
+              <a title="LinkedIn" href="https://www.linkedin.com/in/juan-carlos-c-54530b16b/" target="_blank" rel="author noreferrer noopener">
+                <img src="images/linkedin-logo.png" alt="LinkedIn Link" class="icon-size">
+              </a>
             </li>
-
-            <li class="nav__link">
-              <a href="works.html" class="nav-text">Works</a>
+            <li>
+              <a title="GitHub" href="https://github.com/jmcruz14" target="_blank" rel="author noreferrer noopener">
+              <img src="images/github_icon.svg" alt="GitHub Link" class="icon-size">
+              </a>
             </li>
-          
+            <li>
+              <a title="Email" href="mailto:jccruz009@yahoo.com" target="_blank" rel="author noreferrer noopener">
+                <img src="images/email_icon.png" alt="Email Link" class="icon-size">
+              </a>
+            </li>
+          </ul>
+        </nav>
+    
+      </header>
+    
+      <nav class="nav-links">
+        <ul>
+          <li>
+            <a href="index.html" rel="next author noreferrer noopener">About Me</a>
+          </li>
+          <li>
+            <a href="works.html" rel="next author noreferrer noopener">Works</a> 
+          </li>
         </ul>
-    </nav>
+      </nav>
+
+      <main>
+
+        <section class="project-info">
+            <img src="images/ritual.png" alt="Video Color Analyzer Preview">
+            <article>
+              <h2>Video Color Analyzer</h2>
+              <h4>April 18, 2023</h4>
+              <p>
+                  Python script using OpenCV-Python, Pillow, and various preprocessing & processing packages to return the most frequent
+                  colors in a video file.
+              </p>
+              <nav class="project-links">
+                  <ul>
+                      <li class="github-link">
+                          <a href="https://github.com/jmcruz14/dominant_color_analyzer">GitHub</a>
+                      </li>
+                  </ul>
+              </nav>
+            </article>
+        </section>
+          
+        <section class="project-info">
+            <img src="images/top_250.jpeg" alt="Top 250 Letterboxd Preview">
+            <article>
+              <h2>
+                  Analysis of the Top 250 Filipino Movies on Letterboxd
+              </h2>
+              <h4>
+                  March 29, 2023
+              </h4>
+              <p>
+                  An Exploratory Data Analysis of the 'Top 250 Filipino Movies' on social
+                  media website Letterboxd.
+              </p>
+              <nav class="project-links">
+                <ul>
+                  <li class="github-link">
+                    <a href="https://github.com/jmcruz14/top_250_filipino_eda">GitHub</a>
+                  </li>
+                </ul>
+              </nav>
+            </article>
+        </section>
+
+        <section class="project-info">
+          <img src="images/phr4r_logo.png" alt="Reddit R4R Webscrape Preview">
+          <article>
+            <h2>
+              r/phr4r webscrape and analysis
+            </h2>
+            <h4>
+              July 15, 2022
+            </h4>
+            <p>
+              A study of the r/phr4r subreddit's demographics and other observable trends through data webscraped from June 15 to 22, 2022.
+          Data webscraped using the pRAW package and analyzed with pandas and matplotlib.
+            </p>
+            <nav class="project-links">
+              <ul>
+                <li class="github-link">
+                  <a href="https://github.com/jmcruz14/r4r_webscraper_app" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </li>
+                <li class="blog-link">
+                  <a href="https://medium.com/@carlczech/the-underlying-trends-of-phr4r-515314ceed43" target="_blank" rel="noopener noreferrer">Blog</a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+        </section>
+        
+        <section class="project-info">
+          <img src="images/geospatial_image.jpg" alt="Route Optimization Preview">
+          <article>
+            <h2>
+              Route Optimizer Program for Last-Mile Delivery
+            </h2>
+            <h4>
+              June 2022
+            </h4>
+            <p>
+              Geospatial Navigation program utilizing Google Geocoder and MapQuest APIs using Dash Plotly framework.
+            </p>
+          </article>
+        </section>
+          
+      </main>
+
+      <footer>
+        <p>
+          GitHub Source Code for this website can be found 
+          <a href="https://github.com/jmcruz14/jmcruz14.github.io/" rel="noreferrer noopener">here.</a>
+        </p>
+      </footer>
+    
 </body>
     <script src="main.js"></script>
 </html>
+
+

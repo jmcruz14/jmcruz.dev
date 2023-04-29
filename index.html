@@ -1,82 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&family=Inter:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&family=Raleway&family=Roboto:wght@100&display=swap" rel="stylesheet">                                                   
-    <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="mod_style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jay Cruz's developer portfolio website where you can check out a summary of his personal works.">
+  <meta name="robots" content="all">
+  <meta name="keywords" content="Data Scientist, Data Analytics, Software Engineer">
 
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/97eafd2cc3.js" crossorigin="anonymous"></script>
-    
-    <link rel="icon" href="images/jclogofix-smaller.svg">
-    <title>Jay Cruz Portfolio</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&family=Inter:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&family=Raleway&family=Roboto:wght@100&display=swap" rel="stylesheet">
 
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/jclogofix-smaller.svg">
+  <title>Jay Cruz Portfolio</title>
 </head>
-<body>
+<body class="about-me">
 
-    <div class="header">
-        <div class="header-name">
-            <!-- <b class="fa-solid fa-user"></b> -->
-            Jay Cruz
-        </div>
-        <div class="subheader-name">
-            Python Developer
-        </div>
-            <br>
-                <a title="LinkedIn" href="https://www.linkedin.com/in/juan-carlos-c-54530b16b/" target="_blank"><img src="images/linkedin-logo.png" alt="" class="icon-size"></a>
-                <a title="GitHub" href="https://github.com/jmcruz14" target="_blank" rel="noopener noreferrer"><img src="images/github_icon.svg" alt="" class="icon-size"></a>
-                <a title="Email" href="mailto:jccruz009@yahoo.com" target="_blank"><img src="images/email_icon.png" alt="" class="icon-size"></a>
-        </div>
-    </div>
+  <header class="title-bar">
+    
+    <hgroup>
+      <h1>
+        Jay Cruz
+      </h1>
+      <h3>
+        Python Developer
+      </h3>
+    </hgroup>
 
-    <div class="container">
-        <div class="contents">
-            <div>
-                <img class="user-icon" src="images/jay_prf.jpg" alt="">
-            </div>
-            <div class="author-bio">
-                Hi there! I'm a Python Developer with an undergraduate degree in Industrial Engineering. I have always been fascinated by the intersection of data, technology, and human behavior, and my days always revolve around how data can be used to solve all types of problems.
-                <br>
-                <br>
-                When I&#8217;m not preoccupied with daydreaming of ML-related projects or datasets to study on, you can find me watching movies, reading books, or biking around the city. 
-                <br>
-                <br>
-                Being a generalist, it is important to be open to the variety of experiences which the world offers, as even in my leisure time, I find myself curious and intrigued by the beauty of this world we live in. That openness is something I deem important to my work as a developer, and it also keeps me engaged and enthusiastic to work with various types of people. 
-            </div>
-        </div> 
-    </div>
+    <nav class="personal-links">
+      <ul>
+        <li>
+          <a title="LinkedIn" href="https://www.linkedin.com/in/juan-carlos-c-54530b16b/" target="_blank" rel="author noreferrer noopener">
+            <img src="images/linkedin-logo.png" alt="LinkedIn Link" class="icon-size">
+          </a>
+        </li>
+        <li>
+          <a title="GitHub" href="https://github.com/jmcruz14" target="_blank" rel="author noreferrer noopener">
+          <img src="images/github_icon.svg" alt="GitHub Link" class="icon-size">
+          </a>
+        </li>
+        <li>
+          <a title="Email" href="mailto:jccruz009@yahoo.com" target="_blank" rel="author noreferrer noopener">
+            <img src="images/email_icon.png" alt="Email Link" class="icon-size">
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-    <!-- References -->
-    <nav class="nav" role="navigation">
-        <ul class="nav__list">
-           
-            <li class="nav__link">
-              <a href="index.html" class="nav-text">About Me</a>
-            </li>
+  </header>
 
-            <li class="nav__link">
-              <a href="works.html" class="nav-text">Works</a>
-            </li>
-          
-        </ul>
-      </nav>
+  <nav class="nav-links">
+    <ul>
+      <li>
+        <a href="index.html" target="_blank" rel="next author noreferrer noopener">About Me</a>
+      </li>
+      <li>
+        <a href="works.html" target="_blank" rel="next author noreferrer noopener">Works</a> 
+      </li>
+    </ul>
+  </nav>
+  
+  <main>
+    <section class="personal-image">
+      <img src="images/jay_prf.jpg" alt="Jay Cruz Photo">
+    </section>
+  
+    <article class="write-up">
+      <h3>
+        About Me
+      </h3>
+      <p>
+        Hi there! I'm a Python Developer with an undergraduate degree in Industrial Engineering. I have always been fascinated by the 
+        intersection of data, technology, and human behavior, and my days always revolve around how data can be used to solve all types of problems.
+      </p>
+  
+      <p>
+        When I&#8217;m not preoccupied with daydreaming of ML-related projects or datasets to study on, 
+        you can find me watching movies, reading books, or biking around the city. 
+      </p>
+  
+      <p>
+        Being a generalist, it is important to be open to the variety of experiences which the world offers, as even in my leisure time, 
+        I find myself curious and intrigued by the beauty of this world we live in. That openness is something 
+        I deem important to my work as a developer, and it also keeps me engaged and enthusiastic to work with various types of people.
+      </p>
+      <p class="entry-date">
+        March 30, 2023
+      </p>
+    </article>
+  </main>
+
+  <footer>
+    <p>
+      GitHub Source Code for this website can be found 
+      <a href="https://github.com/jmcruz14/jmcruz14.github.io/" rel="noreferrer noopener">here.</a>
+    </p>
+  </footer>
 
 </body>
-    <script src="main.js"></script>
-
-    <!-- JQuery scripts  -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+  <script src="main.js"></script>
 </html>
