@@ -221,3 +221,68 @@ section.project-info li.blog-link {
 }
 
 /* Responsive Media */
+
+/* 600px, 768px, 992px, 1200px */
+
+@media screen and (min-width: 600px) and (min-width: 768px) {
+
+    body.about-me main {
+        align-items: center;
+        margin-inline-start: 3em;
+        margin-inline-end: 3em;
+        margin-block-start: 5em;
+        gap: 0.25em;
+    }
+
+    section.personal-image {
+        align-items: center;
+    }
+
+    section.personal-image > img {
+        text-align: center;
+        width: 10em;
+    }
+
+    article.write-up {
+        flex-basis: 55%;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (min-width: 992px) {
+
+    body.about-me main {
+        margin-inline-start: 5em;
+        margin-inline-end: 5em;
+        margin-block-start: 7em;
+        gap: 0.5em;
+    }
+
+    section.personal-image > img {
+        width: 15em;
+    }
+
+    article.write-up {
+        flex-basis: 60%;
+    }
+    
+}
+
+@media screen and (min-width: 992px) and (min-width: 1200px) {
+
+    body.about-me main {
+        margin-inline-start: 5em;
+        margin-inline-end: 5em;
+        margin-block-start: 7em;
+        gap: 0.5em;
+    }
+
+    section.personal-image > img {
+        width: 20em;
+    }
+
+    article.write-up {
+        flex-basis: 60%;
+    }
+
+}
