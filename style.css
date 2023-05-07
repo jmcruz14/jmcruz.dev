@@ -77,6 +77,13 @@ p.entry-date {
     text-align: right;
 }
 
+blockquote {
+    color: grey;
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 24px;
+}
+
 /* Nav Links */
 
 nav.nav-links {
@@ -135,7 +142,7 @@ body.works > main {
     flex-direction: column;
     box-sizing: border-box;
     align-items: center;
-    gap: 3em;
+    gap: 5em;
     margin-block-start: 5em;
 }
 
@@ -172,6 +179,10 @@ section.project-info p {
 section.project-info img {
     width: 199px;
     height: 187px; 
+}
+
+div.image-box {
+    justify-self: center;
 }
 
 section.project-info article {
