@@ -8,3 +8,5 @@ dev_notes.md
 .DS_Store
 developer_profile_readme.md
 .DS_Store
+.gitignore
+settings.json
