@@ -16,53 +16,37 @@
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="images/jclogofix-smaller.svg">
-  <title>Jay Cruz Portfolio</title>
+  <title>About - Jay Cruz</title>
+
+  <style>
+    /* local CSS rules */
+    body.about-me main {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-inline: 5em;
+        margin-block-start: 10em;
+        gap: 2em;
+    }
+    article.write-up > p {
+      font-weight: 300;
+    }
+    article.write-up a {
+      display: inline-block;
+      transform-origin: center;
+      transition: transform 0.2 ease-in-out;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    article.write-up a:hover {
+      transform: scale(1.025)
+    }
+    article.write-up a:visited {
+      color: black;
+    }
+  </style>
 </head>
 <body class="about-me">
-
-  <header class="title-bar">
-    
-    <hgroup>
-      <h1>
-        Jay Cruz
-      </h1>
-      <h3>
-        Python Developer
-      </h3>
-    </hgroup>
-
-    <nav class="personal-links">
-      <ul>
-        <li>
-          <a title="LinkedIn" href="https://www.linkedin.com/in/juan-carlos-c-54530b16b/" target="_blank" rel="author noreferrer noopener">
-            <img src="images/linkedin-logo.png" alt="LinkedIn Link" class="icon-size">
-          </a>
-        </li>
-        <li>
-          <a title="GitHub" href="https://github.com/jmcruz14" target="_blank" rel="author noreferrer noopener">
-          <img src="images/github_icon.svg" alt="GitHub Link" class="icon-size">
-          </a>
-        </li>
-        <li>
-          <a title="Email" href="mailto:jccruz009@yahoo.com" target="_blank" rel="author noreferrer noopener">
-            <img src="images/email_icon.png" alt="Email Link" class="icon-size">
-          </a>
-        </li>
-      </ul>
-    </nav>
-
-  </header>
-
-  <nav class="nav-links">
-    <ul>
-      <li>
-        <a href="index.html" rel="next author noreferrer noopener">About Me</a>
-      </li>
-      <li>
-        <a href="works.html" rel="next author noreferrer noopener">Works</a> 
-      </li>
-    </ul>
-  </nav>
   
   <main>
     <section class="personal-image">
@@ -74,26 +58,21 @@
         About Me
       </h3>
       <p>
-        Hi there! I'm a Web Developer with an undergraduate degree in Industrial Engineering and a background in Data Science
-        and Analytics! I have always been fascinated by the intersection of data, technology, and human behavior, and my days 
-        always revolve around how data can be used to solve all types of problems.
+        Hi! I'm Jay, a graduate of Industrial Engineering with a passion for 
+        creating and cultivating meaningful experiences in tech. I'm heavily drawn to fields such data science and design,
+        and I am often fascinated with the intersection of data, technology, human behavior, and problem-solving.
       </p>
   
       <p>
-        When I&#8217;m not preoccupied with daydreaming of ML-related projects or datasets to study on, 
-        you can find me watching movies, reading books, or biking around the city. 
-      </p>
-  
-      <p>
-        Being a generalist, it is important to be open to the variety of experiences which the world offers, as even in my leisure time, 
-        I find myself curious and intrigued by the beauty of this world we live in. That openness is something 
-        I deem important to my work as a developer, and it also keeps me engaged and enthusiastic to work with various types of people.
+        Outside of work, you can find me watching <a href="https://letterboxd.com/tuesjays/" target=_blank>movies</a>, reading
+        <a href="https://www.goodreads.com/user/show/136888605-jay" target=_blank>books</a>, or biking around the city. 
+        I also co-manage and write for <a href="https://www.sinegang.ph/" target=_blank>SINEGANG.ph</a>, a film collective aimed at providing a written platform for young aspiring cinephiles. 
       </p>
       <p class="entry-date">
-        March 30, 2023
+        December 3, 2023
       </p>
 
-      <blockquote>
+      <blockquote style="margin-top: 80px;">
         <q>The best moments usually occur when a person's body or mind is stretched to its limits in a voluntary effort to
           accomplish something difficult and worthwhile.</q>
         <p>- Mihaly Csikszentmihalyi, Flow</p>
@@ -101,12 +80,12 @@
     </article>
   </main>
 
-  <footer>
+  <!-- <footer>
     <p>
       GitHub Source Code for this website can be found 
       <a href="https://github.com/jmcruz14/jmcruz14.github.io/" rel="noreferrer noopener">here.</a>
     </p>
-  </footer>
+  </footer> -->
 
 </body>
   <script src="main.js"></script>

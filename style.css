@@ -3,7 +3,9 @@
 body {
     font-family: 'Inter', Arial, Avenir, Helvetica, sans-serif;
     background-color: #E5E4E2;
+    /* background-color: #c3c2c1; */
     min-height: 100vh;
+    margin-inline: 0;
     padding-block-end: 5em;
     --text-color: black;
 }
@@ -53,15 +55,6 @@ nav.personal-links li {
 
 /* Main */
 
-body.about-me main {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-inline: 5em;
-    margin-block-start: 10em;
-    gap: 2em;
-}
-
 main > article {
     display: flex;
     flex-direction: column;
@@ -103,7 +96,7 @@ nav.nav-links > ul > li {
 }
 
 nav.nav-links > ul > li > a {
-    font-size: 36px;
+    font-size: 28px;
     text-decoration: none;
     line-height: 1.5em;
     color: var(--text-color);
@@ -134,101 +127,6 @@ footer {
 
 footer a {
     text-decoration: none;
-}
-
-/* Works Page */
-body.works > main {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    align-items: center;
-    gap: 5em;
-    margin-block-start: 5em;
-}
-
-/* Project Info Rules */
-section.project-info {
-    width: 50%;
-    display: flex;
-    gap: 2em;
-    box-sizing: border-box;
-}
-
-section.project-info h2, section.project-info h4 {
-    font-family: 'Lato'
-}
-
-section.project-info h2 {
-    font-weight: 500;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-}
-
-section.project-info h4 {
-    font-weight: 400;
-    color: #939393;
-    margin-block-start: 0em;
-}
-
-section.project-info p {
-    font-weight: 300;
-    color: black;
-}
-
-/* Project Info Flex Item Widths */
-section.project-info img {
-    width: 199px;
-    height: 187px; 
-}
-
-div.image-box {
-    justify-self: center;
-}
-
-section.project-info article {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-/* Project Info Nav Link Rules */
-section.project-info nav {
-    padding-block-start: 1em;
-}
-
-section.project-info nav > ul {
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-    margin: 0;
-}
-
-
-section.project-info nav > ul > li {
-    list-style-type: none;
-    width: 73px;
-    height: 20px;
-    text-align: center;
-    line-height: 16px;
-    margin-inline-end: 0.5em;
-}
-
-section.project-info nav > ul > li > a {
-    text-decoration: none;
-    color: white;
-    font-size: 10px;
-    font-weight: 300px;
-}
-
-section.project-info li.github-link {
-    background-color: #BF78CB;
-    border-radius: 50px;
-}
-
-section.project-info li.blog-link {
-    background-color: #4C60CC;
-    border-radius: 50px;
 }
 
 /* Responsive Media */
