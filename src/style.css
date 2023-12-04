@@ -62,7 +62,8 @@ main > article {
 }
 
 section.personal-image > img {
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    border-radius: 9999px;
 }
 
 p.entry-date {
@@ -83,7 +84,8 @@ nav.nav-links {
     position: fixed;
     top: 0;
     left: 0;
-    padding: 1em 0 0 3em;
+    padding: 10px 0 0 25px;
+    z-index: 20;
 } 
 
 nav.nav-links > ul {
