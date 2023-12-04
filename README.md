@@ -14,7 +14,3 @@ Pending portfolio updates
 - reworded "Works" to "Projects"
 - included a "Work" section which contains personal work history
 - minor styling tweaks to links
-
-### References
-- JC Peralta Portfolio
-- Sam Learner Portfolio
