@@ -43,7 +43,7 @@ navLinksContent.classList.add('nav-links');
 navLinksContent.innerHTML = `
   <ul>
     <li>
-      <a href="../index.html" rel="next author noreferrer noopener">About Me</a>
+      <a href="index.html" rel="next author noreferrer noopener">About Me</a>
     </li>
     <li>
       <a href="work.html" rel="next author noreferrer noopener">Work</a>
