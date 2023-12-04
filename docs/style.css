@@ -1,0 +1,247 @@
+/* Root */
+
+body {
+    font-family: 'Inter', Arial, Avenir, Helvetica, sans-serif;
+    background-color: #E5E4E2;
+    /* background-color: #c3c2c1; */
+    min-height: 100vh;
+    margin-inline: 0;
+    padding-block-end: 5em;
+    --text-color: black;
+}
+
+nav.personal-links li:hover, nav.nav-links li:hover, nav.project-links li:hover {
+    transform: scale(1.05);
+}
+
+/* nav.personal-links li:hover, nav.nav-links li:hover {
+    text-decoration: underline;
+} */
+
+/* Header */
+
+header.title-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header.title-bar > hgroup > h1, header.title-bar > hgroup > h3 {
+    text-align: center;
+}
+
+header.title-bar > hgroup > h1 {
+    font-weight: 600;
+    font-size: 36px;
+    margin-block-end: 5px;
+}
+
+header.title-bar > hgroup > h3 {
+    margin-block-start: 5px;
+    font-weight: 300;
+}
+
+nav.personal-links > ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav.personal-links li {
+    margin-inline: 1em;
+    list-style-type: none;
+}
+
+/* Main */
+
+main > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.personal-image > img {
+    /* border-radius: 50%; */
+    border-radius: 9999px;
+}
+
+p.entry-date {
+    color: grey;
+    text-align: right;
+}
+
+blockquote {
+    color: grey;
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 24px;
+}
+
+/* Nav Links */
+
+nav.nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 0 0 25px;
+    z-index: 20;
+} 
+
+nav.nav-links > ul {
+    border-left: 1px solid grey;
+    padding-inline-start: 1em;
+}
+
+nav.nav-links > ul > li {
+    list-style-type: none;
+}
+
+nav.nav-links > ul > li > a {
+    font-size: 28px;
+    text-decoration: none;
+    line-height: 1.5em;
+    color: var(--text-color);
+}
+
+/* Body */
+
+.icon-size {
+    height: 29px;
+    margin-left: 3px;
+	margin-right: 3px;
+	margin-bottom: 2px;
+}
+
+/* Footer */
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-weight: 200;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    margin-inline-end: 3em;
+    padding-inline-end: 1em;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/* Responsive Media */
+
+/* 600px, 768px, 992px, 1200px */
+
+@media screen and (max-width: 390px) {
+
+    body.about-me main {
+        flex-direction: column;
+        align-items: center;
+        margin-inline-start: 3em;
+        margin-inline-end: 3em;
+        margin-block-start: 1em;
+        gap: 0.25em;
+    }
+
+    section.personal-image {
+        align-items: center;
+    }
+
+    section.personal-image > img {
+        text-align: center;
+        width: 18em;
+    }
+
+    article.write-up {
+        flex-basis: 55%;
+    }
+
+    nav.nav-links {
+        position: static;
+    }
+
+    nav.nav-links > ul {
+        border: none;
+    }
+
+    nav.nav-links > ul > li > a {
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+
+
+}
+
+@media screen and (min-width: 390px) and (max-width: 768px) {
+
+    body.about-me main {
+        flex-direction: column;
+        align-items: center;
+        margin-inline-start: 3em;
+        margin-inline-end: 3em;
+        margin-block-start: 5em;
+        gap: 0.25em;
+    }
+
+    section.personal-image {
+        align-items: center;
+    }
+
+    section.personal-image > img {
+        text-align: center;
+        width: 18em;
+    }
+
+    article.write-up {
+        flex-basis: 55%;
+    }
+
+    nav.nav-links > ul > li > a {
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    body.about-me main {
+        margin-inline-start: 5em;
+        margin-inline-end: 5em;
+        margin-block-start: 7em;
+        gap: 0.5em;
+    }
+
+    section.personal-image > img {
+        width: 15em;
+    }
+
+    article.write-up {
+        flex-basis: 60%;
+    }
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    body.about-me main {
+        margin-inline-start: 5em;
+        margin-inline-end: 5em;
+        margin-block-start: 7em;
+        gap: 0.5em;
+    }
+
+    section.personal-image > img {
+        width: 20em;
+    }
+
+    article.write-up {
+        flex-basis: 60%;
+    }
+
+}
