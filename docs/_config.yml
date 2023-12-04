@@ -1,4 +1,4 @@
 theme: jekyll-theme-minimal
-source: src
+source: ./src
 ignore_theme_config: true
 timezone: Asia/Manila
