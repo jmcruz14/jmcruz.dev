@@ -245,3 +245,7 @@ footer a {
     }
 
 }
+
+/* Animation */
+.animate-opacity{animation:opac 0.72s}
+@keyframes opac{from{opacity:0} to{opacity:1}}
