@@ -1,13 +1,24 @@
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
 
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
 .DS_Store
-.DS_Store
-old_index.html
-dev_notes.md
-.DS_Store
-developer_profile_readme.md
-.DS_Store
-.gitignore
-settings.json
-.DS_Store
-jcacperalta.github.io-master/
-sam_learner_projects-master/
+.fleet
+.idea
+
+# Local env files
+.env
+.env.*
+!.env.example
