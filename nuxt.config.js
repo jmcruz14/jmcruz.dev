@@ -1,6 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  ssr: true,
+  spaLoadingTemplate: false,
   srcDir: 'src/',
   css: ['@/assets/css/main.css'],
   image: {
@@ -34,6 +36,12 @@ export default defineNuxtConfig({
           media: 'none',
           onload: "if(media!='all')media='all'",
         },
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&family=Inter:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&family=Raleway&family=Roboto:wght@100&display=swap',
+          media: 'none',
+          onload: "if(media!='all')media='all'",
+        }
       ],
     },
   },
