@@ -1,7 +1,8 @@
 <template>
   <NavLinks />
 
-  <component v-if="selectedComponent" :is="selectedComponent" />
+
+  <component :is="selectedComponent" />
 </template>
 
 <script>
