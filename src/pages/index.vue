@@ -1,10 +1,11 @@
 <template>
-  <span>Test</span>
-  <span>What?</span>
+  <NavLinks />
 </template>
 
 <script>
+import NavLinks from '@/components/NavLinks';
 import { definePageMeta, useSeoMeta } from '#imports';
+import { useRoute, useRouter } from 'vue-router';
 
 // export default (opts) => {
 //   definePageMeta({
@@ -20,12 +21,18 @@ import { definePageMeta, useSeoMeta } from '#imports';
 
 
 export default {
+  components: {
+    NavLinks,
+  },
   setup () {
     definePageMeta({ layout: 'generic' })
     useSeoMeta({ 
       title: 'Jay Cruz Portfolio',
       description: 'Developer Portfolio Website for Jay Cruz',
     })
+
+    const route = useRoute();
+    const router = useRouter();
 
     return {}
   }
