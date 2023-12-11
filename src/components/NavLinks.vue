@@ -2,43 +2,35 @@
   <nav class="nav-links">
     <ul>
       <li>
-        <!-- @click.stop="() => {
-          $router.navigateTo({ path: '/', hash: '#about-me'})
-          activeLink = 'about-me'
-        }" -->
         <NuxtLink
-          :to="{ hash: '#about-me' }"
+          to="#about-me"
           rel="next author noreferrer noopener"
           class="cursor-hover"
-          :style="{ 'text-decoration: underline': activeLink === 'about-me' }"
+          :style="{ 'textDecoration': ($route.hash === '#about-me' || !$route.hash) ? 'underline' : 'none' }"
         >
           About Me
         </NuxtLink>
       </li>
       <li>
-        <!-- @click.stop="() => {
-          $router.push({ path: '/', hash: '#work'})
-          activeLink = 'work'
-        }" -->
         <NuxtLink
-          :to="{ hash: '#work' }"
+          to="#work"
+          exact
           rel="next author noreferrer noopener"
           class="cursor-hover"
-          :style="{ 'text-decoration: underline': activeLink === 'work' }"
-        >Work</NuxtLink>
+          :style="{ 'textDecoration': $route.hash === '#work' ? 'underline' : 'none' }"
+        >
+          Work
+        </NuxtLink>
       </li>
       <li>
-        <!-- @click.stop="() => {
-          $router.push({ path: '/', hash: '#projects'})
-          activeLink = 'projects'
-        }"  -->
         <NuxtLink
-          :to="{ hash: '#projects' }"
+          to="#projects"
+          exact
           rel="next author noreferrer noopener" 
           class="cursor-hover"
-          :style="{ 'text-decoration: underline': activeLink === 'projects' }"
+          :style="{ 'textDecoration': $route.hash === '#projects' ? 'underline' : 'none' }"
         >
-            Projects
+          Projects
         </NuxtLink> 
       </li>
     </ul>
@@ -59,6 +51,7 @@ export default {
     onBeforeRouteUpdate((to, from) => {
       console.warn('navigation-to', to);
       console.warn('navigation-from', from);
+      console.warn('route-data', route);
     })
     
     // Check if the current URL ends with "index.html"
@@ -80,3 +73,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.active-link {
+  text-decoration: underline;
+}
+</style>
