@@ -1,95 +1,93 @@
 <template>
-  <body>
-    <main class="animate-opacity">
+  <main class="animate-opacity" id="work">
 
-      <div class="timeline">
-        <div class="container right">
-          <img src="~/assets/images/work-logos/large_mycure_logo.png">
-          <section>
-            <hgroup>
-              <h2>MYCURE Inc.</h2>
-              <h3>Junior Developer</h3>
-              <h4>April 2023 - November 2023</h4>
-            </hgroup>
-            <!-- IDEA: Show the full list on hover -->
-            <!-- <ul>
-              <li>Used Vue.js to make improvements in the Billing, Inventory, Medical Records, and other modules of the Clinic Management System</li>
-              <li>Contributed at least 20 feature implementations and bugfixes to the company’s main product and helped close a company side project’s first milestone</li>
-            </ul> -->
-          </section>
-        </div>
-
-        <!-- TODO: Insert timeline here wherein I graduated from Colloege -->
-
-        <div class="container left">
-          <img src="~/assets/images/work-logos/up_nec_logo.png">
-          <section>
-            <hgroup>
-              <h2>UP National Engineering Center</h2>
-              <h3>Developer 2</h3>
-              <h4>June 2022 - December 2022</h4>
-            </hgroup>
-            <!-- <ul>
-              <li>Developed, designed, and tested web-based modules scripted in Python and SQL for the University's Budget Office</li>
-              <li>Streamlined the administration management process for user ownership and control</li>
-            </ul> -->
-          </section>
-        </div>
-        <div class="container right">
-          <img src="~/assets/images/work-logos/ilc_diliman_square.png">
-          <section>
-            <hgroup>
-              <h2>ILC Diliman</h2>
-              <h3>Intern</h3>
-              <h4>July 2021 - Sept 2021</h4>
-            </hgroup>
-            <!-- <ul>
-              <li>Evaluated and provided suggestions on 5 prototype wire frame designs to be further developed for public use</li>
-              <li>Provided voice-over for at least 20 training modules on how to use company-produced applications and systems for public use</li>
-            </ul> -->
-          </section>
-        </div>
+    <div class="timeline">
+      <div class="container right">
+        <img src="~/assets/images/work-logos/large_mycure_logo.png">
+        <section>
+          <hgroup>
+            <h2>MYCURE Inc.</h2>
+            <h3>Junior Developer</h3>
+            <h4>April 2023 - November 2023</h4>
+          </hgroup>
+          <!-- IDEA: Show the full list on hover -->
+          <!-- <ul>
+            <li>Used Vue.js to make improvements in the Billing, Inventory, Medical Records, and other modules of the Clinic Management System</li>
+            <li>Contributed at least 20 feature implementations and bugfixes to the company’s main product and helped close a company side project’s first milestone</li>
+          </ul> -->
+        </section>
       </div>
 
-      <div style="background-color: rgba(163, 150, 153, 0.75); padding: 1.5em; display: flex; flex-direction: column; align-items: center;" class="disabled-state">
-        <span>
-          Download Resume
-        </span>
-        <span style="font-size: 12px">Coming soon</span>
+      <!-- TODO: Insert timeline here wherein I graduated from Colloege -->
+
+      <div class="container left">
+        <img src="~/assets/images/work-logos/up_nec_logo.png">
+        <section>
+          <hgroup>
+            <h2>UP National Engineering Center</h2>
+            <h3>Developer 2</h3>
+            <h4>June 2022 - December 2022</h4>
+          </hgroup>
+          <!-- <ul>
+            <li>Developed, designed, and tested web-based modules scripted in Python and SQL for the University's Budget Office</li>
+            <li>Streamlined the administration management process for user ownership and control</li>
+          </ul> -->
+        </section>
       </div>
+      <div class="container right">
+        <img src="~/assets/images/work-logos/ilc_diliman_square.png">
+        <section>
+          <hgroup>
+            <h2>ILC Diliman</h2>
+            <h3>Intern</h3>
+            <h4>July 2021 - Sept 2021</h4>
+          </hgroup>
+          <!-- <ul>
+            <li>Evaluated and provided suggestions on 5 prototype wire frame designs to be further developed for public use</li>
+            <li>Provided voice-over for at least 20 training modules on how to use company-produced applications and systems for public use</li>
+          </ul> -->
+        </section>
+      </div>
+    </div>
 
-      <!-- <article style="background-color: rgba(163, 150, 153, 0.75); padding: 1.5em">
-        <span>
-          More information coming soon!
-        </span>
-      </article> -->
+    <div style="background-color: rgba(163, 150, 153, 0.75); padding: 1.5em; display: flex; flex-direction: column; align-items: center;" class="disabled-state">
+      <span>
+        Download Resume
+      </span>
+      <span style="font-size: 12px">Coming soon</span>
+    </div>
 
-      <!-- <section class="project-info">
-        <div class="image-box"> 
-          to adjust image as a content model w/in flex-item
-          <img src="~/assets/images/ritual.png" alt="Video Color Analyzer Preview">
-        </div>
-        <article>
-          <h2>Video Color Analyzer</h2>
-          <h4>April 18, 2023</h4>
-          <p>
-              Python script using OpenCV-Python, Pillow, and various preprocessing & processing packages to return the most frequent
-              colors in a video file.
-          </p>
-          <nav class="project-links">
-              <ul>
-                  <li class="github-link">
-                      <a href="https://github.com/jmcruz14/dominant_color_analyzer">GitHub</a>
-                  </li>
-              </ul>
-          </nav>
-        </article>
-      </section> -->
-    </main>
-  </body>
+    <!-- <article style="background-color: rgba(163, 150, 153, 0.75); padding: 1.5em">
+      <span>
+        More information coming soon!
+      </span>
+    </article> -->
+
+    <!-- <section class="project-info">
+      <div class="image-box"> 
+        to adjust image as a content model w/in flex-item
+        <img src="~/assets/images/ritual.png" alt="Video Color Analyzer Preview">
+      </div>
+      <article>
+        <h2>Video Color Analyzer</h2>
+        <h4>April 18, 2023</h4>
+        <p>
+            Python script using OpenCV-Python, Pillow, and various preprocessing & processing packages to return the most frequent
+            colors in a video file.
+        </p>
+        <nav class="project-links">
+            <ul>
+                <li class="github-link">
+                    <a href="https://github.com/jmcruz14/dominant_color_analyzer">GitHub</a>
+                </li>
+            </ul>
+        </nav>
+      </article>
+    </section> -->
+  </main>
 </template>
 
-<style>
+<style scoped>
   main {
     display: flex;
     flex-direction: column;
@@ -101,7 +99,7 @@
 
   /* .timeline {
     position: relative;
-    max-width: 1200px;
+    max-width: 1024px;
     margin: 0;
   } */
 
@@ -117,7 +115,7 @@
   /* margin-left: -3px; */
   
   .timeline {
-    max-width: 1200px;
+    max-width: 1024px;
     margin: 0;
   }
 
@@ -193,7 +191,7 @@
     cursor: pointer;
   } */
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 640px) {
 
     .timeline {
       display: flex;
