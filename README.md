@@ -1,19 +1,75 @@
-# jmcruz14.github.io
-Code Portfolio
+# Nuxt 3 Minimal Starter
 
-Pending portfolio updates
-- [x] Updated Job History
-- [ ] Timeline-like application of GitHub
-- [ ] V2 redesign
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-### Version Logs
+## Setup
 
-1.1.1 - December 5, 2023
-- Added W3.CSS animations
+Make sure to install the dependencies:
 
-1.1.0 – December 3, 2023
-- updated the About Me section
-- moved header and footer to a separate js file
-- reworded "Works" to "Projects"
-- included a "Work" section which contains personal work history
-- minor styling tweaks to links
+```bash
+# npm
+npm install
+
+# pnpm
+pnpm install
+
+# yarn
+yarn install
+
+# bun
+bun install
+```
+
+## Development Server
+
+Start the development server on `http://localhost:3000`:
+
+```bash
+# npm
+npm run dev
+
+# pnpm
+pnpm run dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm run build
+
+# yarn
+yarn build
+
+# bun
+bun run build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm run preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
