@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <header class="title-bar">
     <hgroup>
       <h1>
         Jay Cruz
@@ -28,5 +28,5 @@
         </li>
       </ul>
     </nav>
-  </div>
+  </header>
 </template>
