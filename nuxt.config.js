@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  preset: 'node-server',
   devtools: { enabled: true },
   ssr: true,
   spaLoadingTemplate: false,
