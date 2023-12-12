@@ -46,7 +46,7 @@ export default {
     })
 
     watch(() => route.hash, (newRouteHash) => {
-      console.warn('new-route-hash', newRouteHash);
+      // console.warn('new-route-hash', newRouteHash);
       if (!newRouteHash || newRouteHash === '#about-me') {
         selectedComponent.value = markRaw(AboutMe);
       }

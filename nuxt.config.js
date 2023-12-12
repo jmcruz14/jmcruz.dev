@@ -4,6 +4,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: true,
   spaLoadingTemplate: false,
+  plugins: [
+    '~/plugins/analytics.client.js',
+  ],
   srcDir: 'src/',
   css: ['@/assets/css/main.css'],
   image: {

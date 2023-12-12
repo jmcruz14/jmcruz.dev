@@ -49,9 +49,9 @@ export default {
     const activeLink = ref(null);
 
     onBeforeRouteUpdate((to, from) => {
-      console.warn('navigation-to', to);
-      console.warn('navigation-from', from);
-      console.warn('route-data', route);
+      // console.warn('navigation-to', to);
+      // console.warn('navigation-from', from);
+      // console.warn('route-data', route);
     })
     
     // Check if the current URL ends with "index.html"
