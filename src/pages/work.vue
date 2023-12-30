@@ -50,7 +50,7 @@
       </div>
     </div>
 
-    <a href="/jccruz_resume.pdf" download="" class="download-link">
+    <a href="/jccruz_resume.pdf" download="RESUME - JUAN CARLOS CRUZ" class="download-link">
       <div style="background-color: rgba(163, 150, 153, 0.75); padding: 1.5em; display: flex; flex-direction: column; align-items: center;" class="download-button">
         <span>
           Download Resume
