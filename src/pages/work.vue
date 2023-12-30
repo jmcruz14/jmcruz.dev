@@ -97,6 +97,12 @@ export default {
     definePageMeta(
       { layout: 'generic' }
     )
+    useSeoMeta(
+      {
+        title: 'Work - Jay Cruz',
+        description: 'Work and Company History'
+      }
+    )
   }
 }
 
