@@ -2,12 +2,12 @@
   <main class="animate-opacity" id="work">
 
     <div class="timeline">
-      <div class="container right">
+      <div class="container">
         <img src="~/assets/images/work-logos/large_mycure_logo.png">
         <section>
           <hgroup>
             <h2>MYCURE Inc.</h2>
-            <h3>Junior Developer</h3>
+            <h3>Junior Software Developer</h3>
             <h4>April 2023 - November 2023</h4>
           </hgroup>
           <!-- IDEA: Show the full list on hover -->
@@ -20,7 +20,7 @@
 
       <!-- TODO: Insert timeline here wherein I graduated from Colloege -->
 
-      <div class="container left">
+      <div class="container">
         <img src="~/assets/images/work-logos/up_nec_logo.png">
         <section>
           <hgroup>
@@ -34,7 +34,7 @@
           </ul> -->
         </section>
       </div>
-      <div class="container right">
+      <div class="container">
         <img src="~/assets/images/work-logos/ilc_diliman_square.png">
         <section>
           <hgroup>
@@ -87,6 +87,19 @@
   </main>
 </template>
 
+<script>
+import { definePageMeta, useSeoMeta } from '#imports';
+
+export default {
+  setup () {
+    definePageMeta(
+      { layout: 'generic' }
+    )
+  }
+}
+
+</script>
+
 <style scoped>
   main {
     display: flex;
@@ -115,7 +128,11 @@
   /* margin-left: -3px; */
   
   .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 1024px;
+    gap: 0.5rem;
     margin: 0;
   }
 

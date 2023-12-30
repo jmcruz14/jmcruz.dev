@@ -38,6 +38,25 @@
   </footer> -->
 </template>
 
+<script>
+import { definePageMeta, useSeoMeta } from '#imports';
+
+export default {
+  setup () {
+    definePageMeta(
+      { layout: 'generic' }
+    )
+    useSeoMeta(
+      {
+        title: 'About Me - Jay Cruz',
+        description: 'About me section of my personal developer page.'
+      }
+    )
+  }
+}
+
+</script>
+
 <style scoped>
   /* local CSS rules */ 
   main {
@@ -63,5 +82,70 @@
   }
   article.write-up a:visited {
     color: black;
+  }
+
+  @media screen and (max-width: 640px) {
+    main#about-me {
+        flex-direction: column;
+        align-items: center;
+        margin-inline-start: 3em;
+        margin-inline-end: 3em;
+        margin-block-start: 1em;
+        gap: 0.25em;
+    }
+    section.personal-image {
+      align-items: center;
+    }
+
+    section.personal-image > img {
+        text-align: center;
+        width: 18em;
+    }
+
+    article.write-up {
+        flex-basis: 55%;
+    }
+  }
+
+  @media screen and (min-width: 640px) and (max-width: 768px) {
+    main#about-me {
+        flex-direction: column;
+        align-items: center;
+        margin-inline-start: 3em;
+        margin-inline-end: 3em;
+        margin-block-start: 5em;
+        gap: 0.25em;
+    }
+
+    section.personal-image {
+        align-items: center;
+    }
+
+    section.personal-image > img {
+        text-align: center;
+        width: 18em;
+    }
+
+    article.write-up {
+        flex-basis: 55%;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    main.about-me {
+        margin-inline-start: 5em;
+        margin-inline-end: 5em;
+        margin-block-start: 7em;
+        gap: 0.5em;
+    }
+
+    section.personal-image > img {
+        width: 20em;
+    }
+
+    article.write-up {
+        flex-basis: 60%;
+    }
+
   }
 </style>

@@ -3,32 +3,32 @@
     <ul>
       <li>
         <NuxtLink
-          to="#about-me"
+          to="/about-me"
           rel="next author noreferrer noopener"
           class="cursor-hover"
-          :style="{ 'textDecoration': ($route.hash === '#about-me' || !$route.hash) ? 'underline' : 'none' }"
+          :style="{ 'textDecoration': ($route.path === '/about-me' || !$route.path) ? 'underline' : 'none' }"
         >
           About Me
         </NuxtLink>
       </li>
       <li>
         <NuxtLink
-          to="#work"
+          to="/work"
           exact
           rel="next author noreferrer noopener"
           class="cursor-hover"
-          :style="{ 'textDecoration': $route.hash === '#work' ? 'underline' : 'none' }"
+          :style="{ 'textDecoration': $route.path === '/work' ? 'underline' : 'none' }"
         >
           Work
         </NuxtLink>
       </li>
       <li>
         <NuxtLink
-          to="#projects"
+          to="/projects"
           exact
           rel="next author noreferrer noopener" 
           class="cursor-hover"
-          :style="{ 'textDecoration': $route.hash === '#projects' ? 'underline' : 'none' }"
+          :style="{ 'textDecoration': $route.path === '/projects' ? 'underline' : 'none' }"
         >
           Projects
         </NuxtLink> 
@@ -49,9 +49,9 @@ export default {
     const activeLink = ref(null);
 
     onBeforeRouteUpdate((to, from) => {
-      // console.warn('navigation-to', to);
-      // console.warn('navigation-from', from);
-      // console.warn('route-data', route);
+      console.warn('navigation-to', to);
+      console.warn('navigation-from', from);
+      console.warn('route-data', route);
     })
     
     // Check if the current URL ends with "index.html"
@@ -78,4 +78,25 @@ export default {
 .active-link {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 640px) {
+  nav.nav-links {
+        position: static;
+    }
+
+    nav.nav-links > ul {
+        border: none;
+    }
+
+    nav.nav-links > ul > li > a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px) {
+  nav.nav-links > ul > li > a {
+      font-size: 20px;
+  }
+}
+
 </style>

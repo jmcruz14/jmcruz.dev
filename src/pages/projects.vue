@@ -95,6 +95,25 @@
   </main>
 </template>
 
+<script>
+import { definePageMeta, useSeoMeta } from '#imports';
+
+export default {
+  setup () {
+    definePageMeta(
+      { layout: 'generic' }
+    )
+    useSeoMeta(
+      {
+        title: 'Projects - Jay Cruz',
+        description: 'List of projects worked on'
+      }
+    )
+  }
+}
+
+</script>
+
 <style scoped>
   /* Projects Page */
   main.projects {
