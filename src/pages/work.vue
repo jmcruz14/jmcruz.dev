@@ -50,12 +50,14 @@
       </div>
     </div>
 
-    <div style="background-color: rgba(163, 150, 153, 0.75); padding: 1.5em; display: flex; flex-direction: column; align-items: center;" class="disabled-state">
-      <span>
-        Download Resume
-      </span>
-      <span style="font-size: 12px">Coming soon</span>
-    </div>
+    <a href="/jccruz_resume.pdf" download="" class="download-link">
+      <div style="background-color: rgba(163, 150, 153, 0.75); padding: 1.5em; display: flex; flex-direction: column; align-items: center;" class="download-button">
+        <span>
+          Download Resume
+        </span>
+        <!-- <span style="font-size: 12px">Coming soon</span> -->
+      </div>
+    </a>
 
     <!-- <article style="background-color: rgba(163, 150, 153, 0.75); padding: 1.5em">
       <span>
@@ -131,7 +133,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1024px;
+    max-width: 1200px;
     gap: 0.5rem;
     margin: 0;
   }
@@ -195,18 +197,24 @@ export default {
     font-weight: 400
   }
 
-  .disabled-state {
+  a.download-link {
+    text-decoration: none;
+  }
+
+  .download-button {
     background-color: rgb(213, 213, 213) !important;
-    color: rgb(158, 158, 158);
+    /* color: rgb(158, 158, 158); */
+    color: black;
+    text-decoration: none !important;
     border: 1px solid black;
     /* color: white; */
   }
 
-  /* .disabled-state:hover {
+  .download-button:hover {
     color: white;
-    background-color: black !important;
+    background-color: #2a2a2a !important;
     cursor: pointer;
-  } */
+  }
 
   @media screen and (max-width: 640px) {
 
