@@ -1,7 +1,38 @@
 <template>
   <main class="animate-opacity" id="work">
 
+    <div class="skills">
+      <h2>Skills</h2>
+      <div class="skills-showcase">
+        <section class="skill-box">
+          <img src="~/assets/images/skills/html.png">
+          HTML
+        </section>
+        <section class="skill-box">
+          <img src="~/assets/images/skills/css.png">
+          CSS
+        </section>
+        <section class="skill-box">
+          <img src="~/assets/images/skills/js.png">
+          JS
+        </section>
+        <section class="skill-box">
+          <img src="~/assets/images/skills/postgresql.png">
+          PostgreSQL
+        </section>
+        <section class="skill-box">
+          <img src="~/assets/images/skills/python.png">
+          Python
+        </section>
+        <section class="skill-box">
+          <img src="~/assets/images/skills/vue-logo.png">
+          Vue 3
+        </section>
+      </div>
+    </div>
+    
     <div class="timeline">
+      <h2 style="margin: 0 0 0.5em 0; padding: 0">Timeline</h2>
       <div class="container">
         <img src="~/assets/images/work-logos/large_mycure_logo.png">
         <section>
@@ -38,7 +69,7 @@
         <img src="~/assets/images/work-logos/ilc_diliman_square.png">
         <section>
           <hgroup>
-            <h2>ILC Diliman</h2>
+            <h2>Interactive Learning Center Diliman</h2>
             <h3>Intern</h3>
             <h4>July 2021 - Sept 2021</h4>
           </hgroup>
@@ -115,7 +146,7 @@ export default {
     flex-direction: column;
     box-sizing: border-box;
     align-items: center;
-    gap: 5em;
+    gap: 2.5em;
     margin-block-start: 5em;
   }
 
@@ -135,6 +166,31 @@ export default {
     left: 50%;
   } */
   /* margin-left: -3px; */
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+  }
+
+  .skills .skills-showcase {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 25px 50px;
+  }
+
+  .skill-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    padding: 1em;
+  }
+
+  .skill-box > img {
+    height: 100px;
+  }
   
   .timeline {
     display: flex;
