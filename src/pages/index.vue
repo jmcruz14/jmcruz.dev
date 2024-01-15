@@ -25,7 +25,7 @@ export default {
       title: 'Jay Cruz Portfolio',
       description: 'Developer Portfolio Website for Jay Cruz',
     })
-    navigateTo('/about-me')
+    navigateTo('/work')
   }
 }
 </script>
