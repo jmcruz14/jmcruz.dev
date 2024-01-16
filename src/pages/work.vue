@@ -28,6 +28,10 @@
           <img src="~/assets/images/skills/vue-logo.png">
           Vue 3
         </section>
+        <section class="skill-box">
+          <img src="~/assets/images/skills/git.png">
+          Git
+        </section>
       </div>
     </div>
     
@@ -280,6 +284,10 @@ export default {
   }
 
   @media screen and (max-width: 640px) {
+
+    .skills .skills-showcase {
+      grid-template-columns: auto auto;
+    }
 
     .timeline {
       display: flex;
