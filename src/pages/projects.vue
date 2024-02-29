@@ -209,4 +209,18 @@ export default {
       background-color: #4C60CC;
       border-radius: 50px;
   }
+
+  /* Mobile Page */
+  @media screen and (max-width: 640px) {
+    section.project-info {
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+    }
+
+    nav.project-links {
+      display: flex;
+      justify-content: center;
+    }
+  }
 </style>
