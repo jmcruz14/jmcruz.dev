@@ -7,6 +7,9 @@ export default defineNuxtConfig({
   plugins: [
     '~/plugins/analytics.client.js',
   ],
+  modules: [
+    '@nuxt/image',
+  ],
   srcDir: 'src/',
   css: ['@/assets/css/main.css'],
   image: {
