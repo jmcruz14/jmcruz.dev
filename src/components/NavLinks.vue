@@ -81,16 +81,27 @@ export default {
 
 @media screen and (max-width: 640px) {
   nav.nav-links {
-        position: static;
-    }
+		position: static;
+	}
 
-    nav.nav-links > ul {
-        border: none;
-    }
+	nav.nav-links > ul {
+		border: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
 
-    nav.nav-links > ul > li > a {
-        font-size: 20px;
-    }
+		padding-left: 0;
+		overflow-y: hidden;
+		overflow-x: scroll;
+	}
+
+	nav.nav-links > ul > li > a {
+		font-size: 16px;
+	}
+
+	::-webkit-scrollbar {
+		display: none;
+	}
 }
 
 @media screen and (min-width: 640px) and (max-width: 768px) {
