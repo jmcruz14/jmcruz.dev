@@ -98,7 +98,7 @@ nav.nav-links > ul > li {
 }
 
 nav.nav-links > ul > li > a {
-  font-size: 28px;
+  font-size: 23px;
   text-decoration: none;
   line-height: 1.5em;
   color: var(--text-color);
