@@ -5,7 +5,7 @@
         Jay Cruz
       </h1>
       <!-- NOTE: add some hover effect here to shower "Aspiring Data Scientist/Engineer" -->
-      <h3>
+      <h3 class="title-designation">
         Software Developer
       </h3>
     </hgroup>
@@ -31,3 +31,19 @@
     </nav>
   </header>
 </template>
+
+<style scoped>
+.title-designation {
+  transition: color 0.3s ease-in-out;
+}
+
+.title-designation:hover {
+  cursor: crosshair;
+}
+
+h3:hover::after {
+  content: "Aspiring Data Scientist/Engineer";
+  color: rgb(95, 146, 95); /* Change color of the added text */
+  transition: color 0.3s ease-in-out;
+}
+</style>
