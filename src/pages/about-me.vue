@@ -3,12 +3,14 @@
     <section class="personal-image">
       <!-- <NuxtImg src="/jay_prf.jpg" /> -->
       <!-- NOTE: NuxtImg appears on nuxt build deployments not in local dev build-->
-      <NuxtImg
+      <!-- <NuxtImg
         preload
         src="/jay_prf_square.png"
         alt="Jay Cruz Photo"
-      />
-      <!-- <img src="/jay_prf_square.png" alt="Jay Cruz Photo"> -->
+        sizes="sm:22em md:20em"
+      /> -->
+      <!-- TODO: explore changes re: providers -->
+      <img src="/jay_prf_square.png" alt="Jay Cruz Photo">
     </section>
 
     <article class="write-up">
