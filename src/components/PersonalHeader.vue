@@ -4,6 +4,7 @@
       <h1>
         Jay Cruz
       </h1>
+      <!-- NOTE: add some hover effect here to shower "Aspiring Data Scientist/Engineer" -->
       <h3>
         Software Developer
       </h3>
