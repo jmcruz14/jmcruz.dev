@@ -32,6 +32,10 @@
           <img src="~/assets/images/skills/git.png">
           Git
         </section>
+        <section class="skill-box">
+          <img src="~/assets/images/skills/React-icon.svg.png">
+          React
+        </section>
       </div>
     </div>
     
