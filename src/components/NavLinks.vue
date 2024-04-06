@@ -1,67 +1,73 @@
 <template>
-    <nav class="nav-links">
-        <ul>
-            <li>
-                <NuxtLink
-                    to="/about-me"
-                    rel="next author noreferrer noopener"
-                    class="cursor-hover"
-                    :style="{
-                        textDecoration:
-                            $route.path === '/about-me' || !$route.path
-                                ? 'underline'
-                                : 'none',
-                    }"
-                >
-                    About Me
-                </NuxtLink>
-            </li>
-            <li>
-                <NuxtLink
-                    to="/work"
-                    exact
-                    rel="next author noreferrer noopener"
-                    class="cursor-hover"
-                    :style="{
-                        textDecoration:
-                            $route.path === '/work' ? 'underline' : 'none',
-                    }"
-                >
-                    Work
-                </NuxtLink>
-            </li>
-            <li>
-                <NuxtLink
-                    to="/projects"
-                    exact
-                    rel="next author noreferrer noopener"
-                    class="cursor-hover"
-                    :style="{
-                        textDecoration:
-                            $route.path === '/projects' ? 'underline' : 'none',
-                    }"
-                >
-                    Projects
-                </NuxtLink>
-            </li>
-            <li>
-                <NuxtLink
-                    to="/analytics-by-jay"
-                    exact
-                    rel="next author noreferrer noopener"
-                    class="cursor-hover"
-                    :style="{
-                        textDecoration:
-                            $route.path === '/analytics-by-jay'
-                                ? 'underline'
-                                : 'none',
-                    }"
-                >
-                    Analytics by Jay
-                </NuxtLink>
-            </li>
-        </ul>
-    </nav>
+	<nav class="nav-links">
+		<ul>
+			<li>
+				<i class="las la-user-circle" style="font-size: 28px"></i>
+				<NuxtLink
+				to="/about-me"
+				rel="next author noreferrer noopener"
+				class="cursor-hover"
+				:style="{
+						textDecoration:
+							$route.path === '/about-me' || !$route.path
+								? 'underline'
+								: 'none',
+					}"
+				>
+					<span>About Me</span>
+				</NuxtLink>
+			</li>
+			<li>
+				<i class="las la-briefcase" style="font-size: 28px"></i>
+				<NuxtLink
+					to="/work"
+					exact
+					rel="next author noreferrer noopener"
+					class="cursor-hover"
+					:style="{
+						textDecoration:
+							$route.path === '/work' ? 'underline' : 'none',
+					}"
+				>
+					<span>Work</span>
+				</NuxtLink>
+			</li>
+			<li>
+				<i class="las la-project-diagram" style="font-size: 28px"></i>
+				<NuxtLink
+					to="/projects"
+					exact
+					rel="next author noreferrer noopener"
+					class="cursor-hover"
+					:style="{
+						textDecoration:
+							$route.path === '/projects' ? 'underline' : 'none',
+					}"
+				>
+					<span>Projects</span>
+				</NuxtLink>
+			</li>
+			<!-- <li>
+				<i class="las la-chart-bar" style="font-size: 28px" />
+				<NuxtLink
+					to="/analytics-by-jay"
+					exact
+					rel="next author noreferrer noopener"
+					class="cursor-hover"
+					:style="{
+							textDecoration:
+									$route.path === '/analytics-by-jay'
+											? 'underline'
+											: 'none',
+					}"
+				>
+				<span>
+						Analytics by Jay
+					</span>
+				</NuxtLink>
+			</li> -->
+		</ul>
+	</nav>
 </template>
 
 <script>
