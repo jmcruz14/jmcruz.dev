@@ -1,7 +1,10 @@
 /* Root */
+:root {
+  --font-family: 'Inter', Arial, Avenir, Helvetica, sans-serif;
+}
 
 body {
-  font-family: 'Inter', Arial, Avenir, Helvetica, sans-serif;
+  font-family: var(--font-family);
   background-color: #E5E4E2;
   /* background-color: #c3c2c1; */
   min-height: 100vh;
@@ -95,6 +98,9 @@ nav.nav-links > ul {
 
 nav.nav-links > ul > li {
   list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
 }
 
 nav.nav-links > ul > li > a {
