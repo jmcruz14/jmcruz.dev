@@ -104,6 +104,18 @@
           </p>
         </article>
       </section>
+      
+      <section class="see-more">
+        <NuxtLink
+          href="https://github.com/jmcruz14?tab=repositories"
+          target="_blank"
+        >
+          <button type="button">
+            <img src="~/assets/images/github_icon.svg" />
+            <span>See more at GitHub</span>
+          </button>
+        </NuxtLink>
+      </section>
     </section>
 
     <section class="analytics-content" :class="{hidden: selectedTab === 'dataTab' ? false : true}">
@@ -113,17 +125,6 @@
       </div>
     </section>
 
-    <section class="see-more">
-      <NuxtLink
-        href="https://github.com/jmcruz14?tab=repositories"
-        target="_blank"
-      >
-        <button type="button">
-          <img src="~/assets/images/github_icon.svg" />
-          <span>See more at GitHub</span>
-        </button>
-      </NuxtLink>
-    </section>
   </main>
 </template>
 
@@ -314,11 +315,13 @@ section.see-more button {
   padding: 1em 0.25em 1em 0.25em;
   width: 28em;
   font-family: inherit;
+  font-weight: 300;
 
-  background: linear-gradient(to bottom, #e5e4e2, rgb(255, 255, 255))
+  /* background: linear-gradient(to bottom, #e5e4e2, rgb(255, 255, 255)) */
+  background: rgb(237, 237, 237)
     rgb(0, 0, 0);
   border-radius: 8px;
-  border: none;
+  border: 0.5px grey solid;
 }
 
 section.see-more a {
