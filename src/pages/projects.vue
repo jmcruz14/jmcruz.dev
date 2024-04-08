@@ -2,16 +2,7 @@
   <main class="animate-opacity projects" id="projects">
 
     <!-- Tab Links -->
-    <div class="tabs">
-      <button class="tablinks" ref="softwareTab" :class="{active: selectedTab === 'softwareTab' ? true : false}" @click="selectTab($event, 'softwareTab')">
-        <i class="las la-hammer"></i>
-        <span>Software</span>
-      </button>
-      <button class="tablinks" ref="dataTab" :class="{active: selectedTab === 'dataTab' ? true : false}" @click="selectTab($event, 'dataTab')">
-        <i class="las la-chart-bar" />
-        <span>Data</span>
-      </button>
-    </div>
+    <Tabs :selected-tab="selectedTab" @change-tab="(e) => selectedTab = e"/>
     
     <section class="project-content animate-opacity" :class="{hidden: selectedTab === 'softwareTab' ? false : true}">
       <section class="project-info">
@@ -132,7 +123,12 @@
 import { definePageMeta, useSeoMeta } from '#imports';
 import { ref, onMounted } from 'vue';
 
+import Tabs from '@/components/tabs/index'
+
 export default {
+  components: {
+    Tabs
+  },
   setup () {
     definePageMeta(
       { layout: 'generic' }
@@ -147,16 +143,11 @@ export default {
     const softwareTab = ref(null);
     const dataTab = ref(null);
     const selectedTab = ref('softwareTab');
-    const selectTab = (e, refLoc) => {
-      console.warn('ref-loc', refLoc)
-      selectedTab.value = refLoc
-    }
 
     return {
       softwareTab,
       dataTab,
       selectedTab,
-      selectTab
     }
   },
 }
@@ -176,39 +167,6 @@ export default {
 
   .hidden {
     display: none !important;
-  }
-
-  /* Tabs */
-  .tabs {
-    display: flex;
-    gap: 2.5em;
-  }
-
-  .tabs button {
-    display: flex;
-    align-items: center;
-    gap: 0.25em;
-    background-color: inherit;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 18px;
-
-    border: 0.5px solid grey;
-    border-radius: 9999px;
-    cursor: pointer;
-    padding: 9px 12px;
-    transition: 0.3s;
-  }
-
-  /* Change background color of buttons on hover */
-  .tabs button:hover {
-    background-color: #ddd;
-  }
-
-  /* Create an active/current tablink class */
-  .tabs button.active {
-    background-color: #000000;
-    color: rgb(237, 237, 237)
   }
 
   /* Project Content */
