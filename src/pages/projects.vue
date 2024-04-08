@@ -13,7 +13,7 @@
       </button>
     </div>
     
-    <section class="project-content" :class="{hidden: selectedTab === 'softwareTab' ? false : true}">
+    <section class="project-content animate-opacity" :class="{hidden: selectedTab === 'softwareTab' ? false : true}">
       <section class="project-info">
         <div class="image-box"> <!-- to adjust image as a content model w/in flex-item -->
           <img src="~/assets/images/ritual.png" alt="Video Color Analyzer Preview">
@@ -118,7 +118,7 @@
       </section>
     </section>
 
-    <section class="analytics-content" :class="{hidden: selectedTab === 'dataTab' ? false : true}">
+    <section class="analytics-content animate-opacity" :class="{hidden: selectedTab === 'dataTab' ? false : true}">
       <div style="border: 1px solid grey; border-radius: 5px; padding: 1.5em; display: flex; gap: 0.75em; background-color: rgb(237, 237, 237); align-items: center">
         <i class="las la-exclamation-triangle" style="font-size: 32px;"></i>
         <span style="font-weight: 300; font-size: 28px">Data-powered projects coming soon!</span>
