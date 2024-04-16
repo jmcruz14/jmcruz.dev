@@ -36,6 +36,10 @@
           <img src="~/assets/images/skills/React-icon.svg.png">
           React
         </section>
+        <section class="skill-box">
+          <img src="~/assets/images/skills/postman-icon.svg">
+          Postman
+        </section>
       </div>
     </div>
     
