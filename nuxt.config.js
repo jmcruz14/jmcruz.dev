@@ -7,10 +7,10 @@ export default defineNuxtConfig({
   plugins: [
     '~/plugins/analytics.client.js',
   ],
+  srcDir: 'src/',
   modules: [
     '@nuxt/image',
   ],
-  srcDir: 'src/',
   css: ['@/assets/css/main.css'],
   image: {
     dir: 'assets/images',
@@ -49,6 +49,13 @@ export default defineNuxtConfig({
           media: 'none',
           onload: "if(media!='all')media='all'",
         },
+        {
+          rel: 'prefetch',
+          as: 'image',
+          href: '~/assets/images/jay_prf_square.png',
+          media: 'none',
+          onload: "if(media!='all')media='all'",
+        }
       ],
     },
   },
