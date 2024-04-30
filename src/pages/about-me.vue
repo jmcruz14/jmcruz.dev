@@ -1,7 +1,11 @@
 <template>
   <main class="animate-opacity" id="about-me">
     <section class="personal-image">
-      <NuxtImg preload src="/jay_prf_square.png" alt="Jay Cruz Photo" />
+      <NuxtImg 
+        preload 
+        src="/jay_prf_square.png" 
+        alt="Jay Cruz Photo"
+      />
     </section>
 
     <article class="write-up">

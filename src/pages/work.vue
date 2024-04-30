@@ -5,39 +5,39 @@
       <h2>Skills</h2>
       <div class="skills-showcase">
         <section class="skill-box">
-          <NuxtImg preload src="/skills/html.png" />
+          <img src="~/assets/images/skills/html.png">
           HTML
         </section>
         <section class="skill-box">
-          <NuxtImg preload src="/skills/css.png" />
+          <img src="~/assets/images/skills/css.png">
           CSS
         </section>
         <section class="skill-box">
-          <NuxtImg preload src="/skills/js.png" />
+          <img src="~/assets/images/skills/js.png">
           JS
         </section>
         <section class="skill-box">
-          <NuxtImg preload src="/skills/postgresql.png" />
+          <img src="~/assets/images/skills/postgresql.png">
           PostgreSQL
         </section>
         <section class="skill-box">
-          <NuxtImg preload src="/skills/python.png" />
+          <img src="~/assets/images/skills/python.png">
           Python
         </section>
         <section class="skill-box">
-          <NuxtImg preload src="/skills/vue-logo.png" />
+          <img src="~/assets/images/skills/vue-logo.png">
           Vue 3
         </section>
         <section class="skill-box">
-          <NuxtImg preload src="/skills/git.png" />
+          <img src="~/assets/images/skills/git.png">
           Git
         </section>
         <section class="skill-box">
-          <NuxtImg preload src="/skills/React-icon.svg.png" />
+          <img src="~/assets/images/skills/React-icon.svg.png">
           React
         </section>
         <section class="skill-box">
-          <NuxtImg preload src="/skills/postman-icon.svg" />
+          <img src="~/assets/images/skills/postman-icon.svg">
           Postman
         </section>
       </div>
