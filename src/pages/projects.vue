@@ -25,59 +25,6 @@
           </nav>
         </article>
       </section>
-        
-      <section class="project-info">
-          <div class="image-box">
-            <img src="~/assets/images/top_250.jpeg" alt="Top 250 Letterboxd Preview">
-          </div>
-          <article>
-            <h2>
-                Analysis of the Top 250 Filipino Movies on Letterboxd
-            </h2>
-            <h4>
-                March 29, 2023
-            </h4>
-            <p>
-                An Exploratory Data Analysis of the 'Top 250 Filipino Movies' on social
-                media website Letterboxd.
-            </p>
-            <nav class="project-links">
-              <ul>
-                <li class="github-link">
-                  <a href="https://github.com/jmcruz14/top_250_filipino_eda">GitHub</a>
-                </li>
-              </ul>
-            </nav>
-          </article>
-      </section>
-  
-      <section class="project-info">
-        <div class="image-box">
-          <img src="~/assets/images/phr4r_logo.png" alt="Reddit R4R Webscrape Preview">
-        </div>
-        <article>
-          <h2>
-            r/phr4r webscrape and analysis
-          </h2>
-          <h4>
-            July 15, 2022
-          </h4>
-          <p>
-            A study of the r/phr4r subreddit's demographics and other observable trends through data webscraped from June 15 to 22, 2022.
-        Data webscraped using the pRAW package and analyzed with pandas and matplotlib.
-          </p>
-          <nav class="project-links">
-            <ul>
-              <li class="github-link">
-                <a href="https://github.com/jmcruz14/r4r_webscraper_app" target="_blank" rel="noopener noreferrer">GitHub</a>
-              </li>
-              <li class="blog-link">
-                <a href="https://medium.com/@carlczech/the-underlying-trends-of-phr4r-515314ceed43" target="_blank" rel="noopener noreferrer">Blog</a>
-              </li>
-            </ul>
-          </nav>
-        </article>
-      </section>
       
       <section class="project-info">
         <div class="image-box">
@@ -110,12 +57,65 @@
     </section>
 
     <section class="analytics-content animate-opacity" :class="{hidden: selectedTab === 'dataTab' ? false : true}">
+      <section class="project-info">
+        <div class="image-box">
+          <img src="~/assets/images/top_250.jpeg" alt="Top 250 Letterboxd Preview">
+        </div>
+        <article>
+          <h2>
+            Analysis of the Top 250 Filipino Movies on Letterboxd
+          </h2>
+          <h4>
+            March 29, 2023
+          </h4>
+          <p>
+            An Exploratory Data Analysis of the 'Top 250 Filipino Movies' on social
+            media website Letterboxd.
+          </p>
+          <nav class="project-links">
+            <ul>
+              <li class="github-link">
+                <a href="https://github.com/jmcruz14/top_250_filipino_eda">GitHub</a>
+              </li>
+            </ul>
+          </nav>
+        </article>
+      </section>
+      
+      <section class="project-info">
+        <div class="image-box">
+          <img src="~/assets/images/phr4r_logo.png" alt="Reddit R4R Webscrape Preview">
+        </div>
+        <article>
+          <h2>
+            r/phr4r webscrape and analysis
+          </h2>
+          <h4>
+            July 15, 2022
+          </h4>
+          <p>
+            A study of the r/phr4r subreddit's demographics and other observable trends through data webscraped from June 15 to 22, 2022.
+            Data webscraped using the pRAW package and analyzed with pandas and matplotlib.
+          </p>
+          <nav class="project-links">
+            <ul>
+              <li class="github-link">
+                <a href="https://github.com/jmcruz14/r4r_webscraper_app" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </li>
+              <li class="blog-link">
+                <a href="https://medium.com/@carlczech/the-underlying-trends-of-phr4r-515314ceed43" target="_blank" rel="noopener noreferrer">Blog</a>
+              </li>
+            </ul>
+          </nav>
+        </article>
+      </section>
+
       <div style="border: 1px solid grey; border-radius: 5px; padding: 1.5em; display: flex; gap: 0.75em; background-color: rgb(237, 237, 237); align-items: center">
         <i class="las la-exclamation-triangle" style="font-size: 32px;"></i>
-        <span style="font-weight: 300; font-size: 28px">Data-powered projects coming soon!</span>
+        <span style="font-weight: 300; font-size: 26px">More data-powered projects coming soon!</span>
       </div>
     </section>
-
+    
   </main>
 </template>
 
@@ -170,7 +170,8 @@ export default {
   }
 
   /* Project Content */
-  section.project-content {
+  section.project-content,
+  section.analytics-content {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
