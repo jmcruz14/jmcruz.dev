@@ -181,7 +181,7 @@ export default {
 
 /* Project Info Rules */
 section.project-info {
-  width: 50%;
+  width: 70%;
   display: flex;
   gap: 2em;
   box-sizing: border-box;
