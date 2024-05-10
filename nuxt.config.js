@@ -50,6 +50,12 @@ export default defineNuxtConfig({
           onload: "if(media!='all')media='all'",
         },
         {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap',
+          media: 'none',
+          onload: "if(media!='all')media='all'",
+        },
+        {
           rel: 'prefetch',
           as: 'image',
           href: '~/assets/images/jay_prf_square.png',

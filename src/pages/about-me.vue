@@ -79,6 +79,7 @@ export default {
     transform-origin: center;
     transition: transform 0.2 ease-in-out;
     font-weight: 500;
+    color: black;
     text-decoration: none;
   }
   article.write-up a:hover {

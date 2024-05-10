@@ -1,16 +1,24 @@
 /* Root */
 :root {
-  --font-family: 'Inter', Arial, Avenir, Helvetica, sans-serif;
+  --font-family: 'Raleway', 'Inter', Arial, Avenir, Helvetica, sans-serif;
+  --tw-gradient-from: #E5E4E2; /* Example value */
+  --tw-gradient-to: #FFFFFF; /* Example value */
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 body {
   font-family: var(--font-family);
-  background-color: #E5E4E2;
-  /* background-color: #c3c2c1; */
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  background-color: #ffffff;
+
   min-height: 100vh;
   margin-inline: 0;
   padding-block-end: 5em;
   --text-color: black;
+}
+
+.developer-text {
+  font-family: "Roboto Mono" !important
 }
 
 nav.personal-links li:hover, nav.nav-links li:hover, nav.project-links li:hover {
@@ -115,8 +123,8 @@ nav.nav-links > ul > li > a {
 .icon-size {
   height: 29px;
   margin-left: 3px;
-margin-right: 3px;
-margin-bottom: 2px;
+  margin-right: 3px;
+  margin-bottom: 2px;
 }
 
 /* Footer */
