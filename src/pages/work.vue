@@ -40,6 +40,10 @@
           <img src="~/assets/images/skills/postman-icon.svg">
           Postman
         </section>
+        <section class="skill-box">
+          <img src="~/assets/images/skills/docker_logo.webp">
+          Docker
+        </section>
       </div>
     </div>
     
@@ -178,7 +182,7 @@ export default {
 
   .skills .skills-showcase {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto;
     gap: 25px 50px;
   }
 
