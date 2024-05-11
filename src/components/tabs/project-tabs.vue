@@ -11,10 +11,10 @@
       </button>
     </div>
   
-    <div class="tab-description">
+    <!-- <div class="tab-description">
       <p>{{ tabDesc }}</p>
       <hr>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -34,29 +34,29 @@ export default {
       get: () => props?.selectedTab,
       set: (val) => emit('change-tab', val)
     });
-    const tabDesc = ref(`I think developing software through programming is just as important as analyzing, building, and preserving data systems. Here is a collection of work that I'm proud of.`)
+    // const tabDesc = ref(`I think developing software through programming is just as important as analyzing, building, and preserving data systems. Here is a collection of work that I'm proud of.`)
 
     const selectTab = (event, tabName) => {
       currentTab.value = tabName;
 
-      switch (tabName) {
-        case 'softwareTab':
-          tabDesc.value = "I think developing software through programming is just as important as analyzing, building, and preserving data systems. Here is a collection of work that I'm proud of."
-          break
-        case 'dataTab':
-          tabDesc.value = `
-            I believe we live in 
-            a data-driven society and understanding data is highly important in this world.
-            Here are some studies and explorations I've undertaken since I've started doing this.
-          `
-          break
-        default:
-          tabDesc.value = 'N/A'
-      }
+      // switch (tabName) {
+      //   case 'softwareTab':
+      //     tabDesc.value = "I think developing software through programming is just as important as analyzing, building, and preserving data systems. Here is a collection of work that I'm proud of."
+      //     break
+      //   case 'dataTab':
+      //     tabDesc.value = `
+      //       I believe we live in 
+      //       a data-driven society and understanding data is highly important in this world.
+      //       Here are some studies and explorations I've undertaken since I've started doing this.
+      //     `
+      //     break
+      //   default:
+      //     tabDesc.value = 'N/A'
+      // }
     }
     return {
       currentTab,
-      tabDesc,
+      // tabDesc,
       selectTab
     }
   }

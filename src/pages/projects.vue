@@ -123,7 +123,7 @@
 import { definePageMeta, useSeoMeta } from '#imports';
 import { ref, onMounted } from 'vue';
 
-import Tabs from '@/components/tabs/index'
+import Tabs from '@/components/tabs/project-tabs'
 
 export default {
   components: {
@@ -162,7 +162,7 @@ export default {
     box-sizing: border-box;
     align-items: center;
     gap: 5em;
-    margin-block-start: 5em;
+    margin-block-start: 2.5em;
   }
 
   .hidden {
