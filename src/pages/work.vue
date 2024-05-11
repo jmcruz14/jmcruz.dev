@@ -93,16 +93,6 @@
       </div>
     </div>
 
-    <a href="/jccruz_resume.pdf" download="RESUME - JUAN CARLOS CRUZ" class="download-link">
-      <div style="background-color: rgba(163, 150, 153, 0.75); padding: 1.5em; display: flex; flex-direction: column; align-items: center;
-        border: 1px solid #737373;" class="download-button">
-        <span>
-          Download Resume
-        </span>
-        <!-- <span style="font-size: 12px">Coming soon</span> -->
-      </div>
-    </a>
-
     <!-- <article style="background-color: rgba(163, 150, 153, 0.75); padding: 1.5em">
       <span>
         More information coming soon!
@@ -159,7 +149,7 @@ export default {
     box-sizing: border-box;
     align-items: center;
     gap: 2.5em;
-    margin-block-start: 5em;
+    margin-block-start: 2.5em;
   }
 
   /* .timeline {

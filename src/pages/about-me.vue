@@ -68,7 +68,7 @@ export default {
       justify-content: space-between;
       align-items: center;
       margin-inline: 5em;
-      margin-block-start: 10em;
+      margin-block-start: 2.5em;
       gap: 2em;
   }
   article.write-up > p {
