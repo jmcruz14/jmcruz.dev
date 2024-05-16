@@ -57,6 +57,25 @@
     </section>
 
     <section class="analytics-content animate-opacity" :class="{hidden: selectedTab === 'dataTab' ? false : true}">
+      
+      <section class="project-info">
+        <div class="image-box">
+          <img src="https://picsum.photos/200" alt="Placeholder image" />
+        </div>
+        <article>
+          <h2>
+            Letterboxd List Dashboard
+            <i class="las la-tools"></i>
+          </h2>
+          <p>
+            An ongoing project built with a stack of MongoDB, FastAPI, and NuxtJS to feature
+            statistical analysis of a Letterboxd list updated whenever the list itself is updated.
+
+            Currently uses my Top 250 list as a starting point for this project.
+          </p>
+        </article>
+      </section>
+      
       <section class="project-info">
         <div class="image-box">
           <img src="~/assets/images/top_250.jpeg" alt="Top 250 Letterboxd Preview">
@@ -223,7 +242,7 @@ section.project-info article {
   width: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 /* Project Info Nav Link Rules */
