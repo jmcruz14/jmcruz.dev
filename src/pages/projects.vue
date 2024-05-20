@@ -295,6 +295,8 @@ section.see-more button {
   font-family: inherit;
   font-weight: 300;
 
+  transition: all 0.3s ease;
+
   /* background: linear-gradient(to bottom, #e5e4e2, rgb(255, 255, 255)) */
   background: rgb(237, 237, 237)
     rgb(0, 0, 0);
