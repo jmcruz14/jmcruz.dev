@@ -1,6 +1,8 @@
-### Roadmap
+### About
 
-- Install personal webscrape tooling with front-end capabilities.
+Personal developer portfolio website. Powered by Nuxt 3. No Tailwind was involved in the making
+of this build. Potentially converting into a portfolio in the future if I am very satisfied
+with the core elements of the source code.
 
 # Nuxt 3 Minimal Starter
 
