@@ -16,7 +16,11 @@
         Hi! I'm Jay, a graduate of Industrial Engineering with a passion for
         creating and cultivating meaningful experiences in tech. I'm heavily drawn to fields such data science and design,
         and I am often fascinated with the intersection of data, technology, human behavior, and problem-solving.
+
       </p>
+	  <p>
+	  I currently work as a Jr. Data Engineer for the B2B SaaS company called <a href="https://sprout.ph/about/" target=_blank>Sprout Solutions.</a>
+	  </p>
       <p>
         Outside of work, you can find me watching <a href="https://letterboxd.com/tuesjays/" target=_blank>movies</a>, reading
         <a href="https://www.goodreads.com/user/show/136888605-jay" target=_blank>books</a>, or biking around the city.
