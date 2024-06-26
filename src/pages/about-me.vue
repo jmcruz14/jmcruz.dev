@@ -18,10 +18,10 @@
         and I am often fascinated with the intersection of data, technology, human behavior, and problem-solving.
 
       </p>
-	  <p>
+	 <!-- <p>
 	  I currently work as a Jr. Data Engineer for a B2B SaaS company focused on providing top-of-the-line solutions to everyday HR problems. 
 	  <!-- called <a href="https://sprout.ph/about/" target=_blank>Sprout Solutions.</a> -->
-	  </p>
+	  </p> -->
       <p>
         Outside of work, you can find me watching <a href="https://letterboxd.com/tuesjays/" target=_blank>movies</a>, reading
         <a href="https://www.goodreads.com/user/show/136888605-jay" target=_blank>books</a>, or biking around the city.
