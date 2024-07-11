@@ -5,6 +5,25 @@
     <Tabs :selected-tab="selectedTab" @change-tab="(e) => selectedTab = e"/>
     
     <section class="project-content animate-opacity" :class="{hidden: selectedTab === 'softwareTab' ? false : true}">
+      
+      <section class="project-info">
+        <div class="image-box">
+          <img src="https://picsum.photos/200" alt="Placeholder image" />
+        </div>
+        <article>
+          <h2>
+            Project Barako
+            <i class="las la-tools"></i>
+          </h2>
+          <p>
+            A map project currently utilizing a React, Node, and Supabase (PostgreSQL) stack to construct
+            a publicly accessible site displaying available local cafés in the Philippines, aimed at
+            a user-friendly approach to enable logging and recording of visited cafés on top of a social
+            media layer.
+          </p>
+        </article>
+      </section>
+
       <section class="project-info">
         <div class="image-box"> <!-- to adjust image as a content model w/in flex-item -->
           <img src="~/assets/images/ritual.png" alt="Video Color Analyzer Preview">
@@ -57,22 +76,29 @@
     </section>
 
     <section class="analytics-content animate-opacity" :class="{hidden: selectedTab === 'dataTab' ? false : true}">
-      
+
       <section class="project-info">
         <div class="image-box">
-          <img src="https://picsum.photos/200" alt="Placeholder image" />
+          <img src="~/assets/images/dashboard_prev.png" alt="Top 250 Dashboard" />
         </div>
         <article>
           <h2>
             Letterboxd List Dashboard
-            <i class="las la-tools"></i>
+            <!-- <i class="las la-tools"></i> -->
           </h2>
           <p>
-            An ongoing project built with a stack of MongoDB, FastAPI, and NuxtJS to feature
-            statistical analysis of a Letterboxd list updated whenever the list itself is updated.
+            A project built using the NuxtJS, FastAPI, and MongoDB stack with the goal of
+            featuring a Letterboxd list according to its observed statistical data.
 
-            Currently uses my Top 250 list as a starting point for this project.
+            The project utilizes a personal Top 250 list as a starting point for this project.
           </p>
+          <nav class="project-links">
+            <ul>
+              <li class="github-link">
+                <a href="https://github.com/jmcruz14/top-250-website">GitHub</a>
+              </li>
+            </ul>
+          </nav>
         </article>
       </section>
       
