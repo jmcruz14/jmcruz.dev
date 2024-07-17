@@ -97,6 +97,9 @@
               <li class="github-link">
                 <a href="https://github.com/jmcruz14/top-250-website">GitHub</a>
               </li>
+							<li class="blog-link">
+                <a href="https://medium.com/@jcmcruz14/documenting-projects-ep-1-the-letterboxd-list-dashboard-603075a4f869" target="_blank" rel="noopener noreferrer">Blog</a>
+              </li>
             </ul>
           </nav>
         </article>
