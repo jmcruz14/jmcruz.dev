@@ -19,6 +19,13 @@
           </Tooltip>
         </li>
         <li>
+          <Tooltip text="Medium" fontSize="14px">
+            <NuxtLink to="https://medium.com/@jcmcruz14" target="_blank" rel="author noreferrer noopener" class="download-link">
+              <i class="lab la-medium"></i>
+            </NuxtLink>
+          </Tooltip>
+        </li>
+        <li>
           <Tooltip text="GitHub" fontSize="14px">
             <NuxtLink to="https://github.com/jmcruz14" target="_blank" rel="author noreferrer noopener" class="download-link">
               <i class="lab la-github"></i>
