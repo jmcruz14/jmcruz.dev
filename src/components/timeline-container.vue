@@ -1,6 +1,8 @@
 <template>
   <div 
     class="container"
+    @mouseenter="toggleDivOpen"
+    @mouseleave="toggleDivClose"
   >
     <img v-if="work_logo_image" :src="`/work-logos/${work_logo_image}.png`">
     <i v-else class="las la-briefcase" style="
@@ -14,6 +16,9 @@
       </hgroup>
     </section>
     
+    <div class="hover-info" v-if="hoverOpen & hasInfo">
+      <slot name="hover-info"></slot>
+    </div>
   </div>
 </template>
 
@@ -42,9 +47,25 @@ export default {
       type: String,
       default: ''
     },
+    hasInfo: {
+      type: Boolean,
+      default: false
+    }
   },
   setup (props, { emit }) {
+    const hoverOpen = ref(false);
+    const toggleDivOpen = () => {
+      hoverOpen.value = true;
+    }
+    const toggleDivClose = () => {
+      hoverOpen.value = false;
+    }
+
     return {
+      toggleDivOpen,
+      toggleDivClose,
+
+      hoverOpen,
     }
   }
 }
@@ -72,6 +93,13 @@ h3 {
 
 h4 {
   font-weight: 400
+}
+
+.hover-info {
+  position: absolute;
+  background-color: white;
+  width: 300px;
+  right: -20.5em
 }
 
 .container {

@@ -55,7 +55,15 @@
         title="Junior Software Developer"
         startDate="April 2023"
         endDate="November 2023"
-      />
+        :hasInfo="true"
+      >
+        <template v-slot:hover-info>
+          <ul>
+            <li>Worked on improvements to various modules of the company Clinic Management System</li>
+            <li>Engaged in additional work related to training and onboarding of users, and integration of analytics</li>
+          </ul>
+        </template>
+      </timelineContainer>
         <!-- IDEA: Show the full list on hover -->
         <!-- <ul>
           <li>Used Vue.js to make improvements in the Billing, Inventory, Medical Records, and other modules of the Clinic Management System</li>
@@ -70,7 +78,15 @@
         title="Python Developer"
         startDate="June 2022"
         endDate="December 2022"
-      />
+        :hasInfo="true"
+      >
+        <template v-slot:hover-info>
+          <ul>
+            <li>Developed, designed, and tested web-based modules scripted in Python and SQL for the University's Budget Office</li>
+            <li>Streamlined the administration management process for user ownership and control</li>
+          </ul>
+        </template>
+      </timelineContainer>
 
       <timelineContainer 
         work_logo_image="ilc_diliman_square"
@@ -79,22 +95,6 @@
         startDate="July 2021"
         endDate="September 2021"
       />
-
-
-      <!-- <div class="container">
-        <img src="~/assets/images/work-logos/up_nec_logo.png">
-        <section>
-          <hgroup>
-            <h2>UP National Engineering Center</h2>
-            <h3>Developer 2</h3>
-            <h4>June 2022 - December 2022</h4>
-          </hgroup> -->
-          <!-- <ul>
-            <li>Developed, designed, and tested web-based modules scripted in Python and SQL for the University's Budget Office</li>
-            <li>Streamlined the administration management process for user ownership and control</li>
-          </ul> -->
-        <!-- </section>
-      </div> -->
 
       <!-- <div class="container">
         <img src="~/assets/images/work-logos/ilc_diliman_square.png">
@@ -191,6 +191,10 @@ export default {
     left: 50%;
   } */
   /* margin-left: -3px; */
+
+  li {
+    margin-bottom: 10px
+  }
 
   .skills {
     display: flex;
