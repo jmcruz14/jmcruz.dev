@@ -50,7 +50,7 @@
     <div class="timeline">
       <h2 style="margin: 0 0 0.5em 0; padding: 0">Timeline</h2>
       <timelineContainer
-        work_logo_image=""
+        work_logo_image="large_mycure_logo"
         company="MYCURE Inc."
         title="Junior Software Developer"
         startDate="April 2023"
