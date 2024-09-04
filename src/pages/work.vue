@@ -49,52 +49,67 @@
     
     <div class="timeline">
       <h2 style="margin: 0 0 0.5em 0; padding: 0">Timeline</h2>
-      <div class="container">
-        <img src="~/assets/images/work-logos/large_mycure_logo.png">
-        <section>
-          <hgroup>
-            <h2>MYCURE Inc.</h2>
-            <h3>Junior Software Developer</h3>
-            <h4>April 2023 - November 2023</h4>
-          </hgroup>
-          <!-- IDEA: Show the full list on hover -->
-          <!-- <ul>
-            <li>Used Vue.js to make improvements in the Billing, Inventory, Medical Records, and other modules of the Clinic Management System</li>
-            <li>Contributed at least 20 feature implementations and bugfixes to the company’s main product and helped close a company side project’s first milestone</li>
-          </ul> -->
-        </section>
-      </div>
+      <timelineContainer
+        work_logo_image=""
+        company="MYCURE Inc."
+        title="Junior Software Developer"
+        startDate="April 2023"
+        endDate="November 2023"
+      />
+        <!-- IDEA: Show the full list on hover -->
+        <!-- <ul>
+          <li>Used Vue.js to make improvements in the Billing, Inventory, Medical Records, and other modules of the Clinic Management System</li>
+          <li>Contributed at least 20 feature implementations and bugfixes to the company’s main product and helped close a company side project’s first milestone</li>
+        </ul> -->
 
       <!-- TODO: Insert timeline here wherein I graduated from Colloege -->
 
-      <div class="container">
+      <timelineContainer 
+        work_logo_image="up_nec_logo"
+        company="UP National Engineering Center"
+        title="Python Developer"
+        startDate="June 2022"
+        endDate="December 2022"
+      />
+
+      <timelineContainer 
+        work_logo_image="ilc_diliman_square"
+        company="Interactive Learning Center Diliman"
+        title="Intern"
+        startDate="July 2021"
+        endDate="September 2021"
+      />
+
+
+      <!-- <div class="container">
         <img src="~/assets/images/work-logos/up_nec_logo.png">
         <section>
           <hgroup>
             <h2>UP National Engineering Center</h2>
             <h3>Developer 2</h3>
             <h4>June 2022 - December 2022</h4>
-          </hgroup>
+          </hgroup> -->
           <!-- <ul>
             <li>Developed, designed, and tested web-based modules scripted in Python and SQL for the University's Budget Office</li>
             <li>Streamlined the administration management process for user ownership and control</li>
           </ul> -->
-        </section>
-      </div>
-      <div class="container">
+        <!-- </section>
+      </div> -->
+
+      <!-- <div class="container">
         <img src="~/assets/images/work-logos/ilc_diliman_square.png">
         <section>
           <hgroup>
             <h2>Interactive Learning Center Diliman</h2>
             <h3>Intern</h3>
             <h4>July 2021 - Sept 2021</h4>
-          </hgroup>
+          </hgroup> -->
           <!-- <ul>
             <li>Evaluated and provided suggestions on 5 prototype wire frame designs to be further developed for public use</li>
             <li>Provided voice-over for at least 20 training modules on how to use company-produced applications and systems for public use</li>
           </ul> -->
-        </section>
-      </div>
+        <!-- </section>
+      </div> -->
     </div>
 
     <!-- <article style="background-color: rgba(163, 150, 153, 0.75); padding: 1.5em">
@@ -128,9 +143,13 @@
 </template>
 
 <script>
+import timelineContainer from '~/components/timeline-container.vue';
 import { definePageMeta, useSeoMeta } from '#imports';
 
 export default {
+  components: {
+    timelineContainer
+  },
   setup () {
     definePageMeta(
       { layout: 'generic' }
@@ -207,63 +226,12 @@ export default {
     margin: 0;
   }
 
-  .container {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1em;
-    width: 45%;
-    padding: 20px;
-
-    background-color: #C7C7C7;
-    border: 1px solid #737373;
-    border-radius: 9999px;
-  }
-
-  .container > section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
   .left {
     left: 0;
   }
 
   .right {
     left: 50%;
-  }
-
-  .container > img {
-    width: 20%;
-    height: 20%;
-  }
-
-  .container > section > ul {
-    padding-left: 20px;
-  }
-
-  div.timeline hgroup > h1, 
-  div.timeline hgroup > h2, 
-  div.timeline hgroup > h3, 
-  div.timeline hgroup > h4,
-  div.timeline hgroup > h5,
-  div.timeline hgroup > h6 {
-    margin-block: 0px
-  }
-
-  h2 {
-    font-size: 20px;
-    font-weight: 600
-  }
-
-  h3 {
-    font-weight: 500;
-  }
-
-  h4 {
-    font-weight: 400
   }
 
   a.download-link {
@@ -302,20 +270,6 @@ export default {
     /* .timeline::after {
       left: 31px;
     } */
-
-  /* Full-width containers */
-    .container {
-      width: 75%;
-      padding: 20px;
-    }
-
-  /* Make sure that all arrows are pointing leftwards */
-    .container::before {
-      left: 60px;
-      border: medium solid white;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent white transparent transparent;
-    }
 
   /* Make sure all circles are at the same spot */
     .left::after, .right::after {
