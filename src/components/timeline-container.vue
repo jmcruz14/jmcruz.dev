@@ -1,13 +1,23 @@
 <template>
   <div 
     class="container"
+    :style="{'background-color': workTypeColor(workType)}"
     @mouseenter="toggleDivOpen"
     @mouseleave="toggleDivClose"
   >
-    <img v-if="work_logo_image" :src="`/work-logos/${work_logo_image}.png`">
-    <i v-else class="las la-briefcase" style="
-      font-size: 90px;
-    "></i>
+    <img 
+      v-if="workLogoImage" 
+      :src="`/work-logos/${workLogoImage}.png`"
+    >
+    <img
+      v-else-if="workLogoUrl"
+      :src="workLogoUrl"
+    >
+    <i 
+      v-else 
+      class="las la-briefcase" 
+      style="font-size: 90px;"
+    />
     <section>
       <hgroup>
         <h2>{{ company }}</h2>
@@ -16,8 +26,11 @@
       </hgroup>
     </section>
     
-    <div class="hover-info" v-if="hoverOpen & hasInfo">
-      <slot name="hover-info"></slot>
+    <div 
+      v-if="hoverOpen & hasInfo"
+      class="hover-info" 
+    >
+      <slot name="hover-info" />
     </div>
   </div>
 </template>
@@ -27,7 +40,11 @@ import { ref } from 'vue';
 
 export default {
   props: {
-    work_logo_image: {
+    workLogoImage: {
+      type: String,
+      default: ''
+    },
+    workLogoUrl: {
       type: String,
       default: ''
     },
@@ -47,6 +64,10 @@ export default {
       type: String,
       default: ''
     },
+    workType: {
+      type: String,
+      default: 'paid'
+    },
     hasInfo: {
       type: Boolean,
       default: false
@@ -61,10 +82,16 @@ export default {
       hoverOpen.value = false;
     }
 
+    const workTypeColor = (workType) => {
+      if (workType === 'volunteer') return 'white'
+      return '#C7C7C7'
+    }
+
     return {
       toggleDivOpen,
       toggleDivClose,
 
+      workTypeColor,
       hoverOpen,
     }
   }
@@ -99,7 +126,9 @@ h4 {
   position: absolute;
   background-color: white;
   width: 300px;
-  right: -20.5em
+  right: -20.5em;
+  padding-right: 0.75em;
+  box-shadow: 8px 9px 0px 0px rgba(0, 0, 0, 0.3);
 }
 
 .container {
@@ -113,7 +142,12 @@ h4 {
 
   background-color: #C7C7C7;
   border: 1px solid #737373;
-  border-radius: 9999px;
+  border-radius: 10px;
+}
+
+.container:hover {
+  background-color: rgba(150, 150, 150, 0.813) !important;
+  cursor: pointer;
 }
 
 .container > section {

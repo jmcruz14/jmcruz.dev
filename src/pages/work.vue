@@ -49,13 +49,49 @@
     
     <div class="timeline">
       <h2 style="margin: 0 0 0.5em 0; padding: 0">Timeline</h2>
+      <div style="display: flex; gap: 1em">
+        <div style="display: flex; gap: 10px; align-items: start;">
+          <div 
+            class="box" 
+            style="background-color: #C7C7C7;"
+          />
+          <span>Paid Work</span>
+        </div>
+
+        <div style="display: flex; gap: 10px; align-items: start;">
+          <div 
+            class="box" 
+            style="background-color: white;"
+          />
+          <span>Volunteer</span>
+        </div>
+      </div>
+
       <timelineContainer
-        work_logo_image="large_mycure_logo"
+        work-logo-url="https://m-cdn.flipboard.social/accounts/avatars/111/537/184/025/760/825/original/a44d96f68b267301.png"
+        company="Omdena AI"
+        title="Volunteer"
+        start-date="July 2024"
+        work-type="volunteer"
+        :has-info="true"
+      >
+        <template #hover-info>
+          <div style="padding: 1em">
+            <h4 style="margin: 0">
+              Projects Done
+            </h4>
+            1. <span>Housing Affordability Analysis in the Greater Parisian Region</span>
+          </div>
+        </template>
+      </timelineContainer>
+
+      <timelineContainer
+        work-logo-image="large_mycure_logo"
         company="MYCURE Inc."
         title="Junior Software Developer"
-        startDate="April 2023"
-        endDate="November 2023"
-        :hasInfo="true"
+        start-date="April 2023"
+        end-date="November 2023"
+        :has-info="true"
       >
         <template v-slot:hover-info>
           <ul>
@@ -73,12 +109,12 @@
       <!-- TODO: Insert timeline here wherein I graduated from Colloege -->
 
       <timelineContainer 
-        work_logo_image="up_nec_logo"
+        work-logo-image="up_nec_logo"
         company="UP National Engineering Center"
         title="Python Developer"
-        startDate="June 2022"
-        endDate="December 2022"
-        :hasInfo="true"
+        start-date="June 2022"
+        end-date="December 2022"
+        :has-info="true"
       >
         <template v-slot:hover-info>
           <ul>
@@ -89,56 +125,13 @@
       </timelineContainer>
 
       <timelineContainer 
-        work_logo_image="ilc_diliman_square"
+        work-logo-image="ilc_diliman_square"
         company="Interactive Learning Center Diliman"
         title="Intern"
-        startDate="July 2021"
-        endDate="September 2021"
+        start-date="July 2021"
+        end-date="September 2021"
       />
-
-      <!-- <div class="container">
-        <img src="~/assets/images/work-logos/ilc_diliman_square.png">
-        <section>
-          <hgroup>
-            <h2>Interactive Learning Center Diliman</h2>
-            <h3>Intern</h3>
-            <h4>July 2021 - Sept 2021</h4>
-          </hgroup> -->
-          <!-- <ul>
-            <li>Evaluated and provided suggestions on 5 prototype wire frame designs to be further developed for public use</li>
-            <li>Provided voice-over for at least 20 training modules on how to use company-produced applications and systems for public use</li>
-          </ul> -->
-        <!-- </section>
-      </div> -->
     </div>
-
-    <!-- <article style="background-color: rgba(163, 150, 153, 0.75); padding: 1.5em">
-      <span>
-        More information coming soon!
-      </span>
-    </article> -->
-
-    <!-- <section class="project-info">
-      <div class="image-box"> 
-        to adjust image as a content model w/in flex-item
-        <img src="~/assets/images/ritual.png" alt="Video Color Analyzer Preview">
-      </div>
-      <article>
-        <h2>Video Color Analyzer</h2>
-        <h4>April 18, 2023</h4>
-        <p>
-            Python script using OpenCV-Python, Pillow, and various preprocessing & processing packages to return the most frequent
-            colors in a video file.
-        </p>
-        <nav class="project-links">
-            <ul>
-                <li class="github-link">
-                    <a href="https://github.com/jmcruz14/dominant_color_analyzer">GitHub</a>
-                </li>
-            </ul>
-        </nav>
-      </article>
-    </section> -->
   </main>
 </template>
 
