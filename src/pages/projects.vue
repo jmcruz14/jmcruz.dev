@@ -8,7 +8,7 @@
       
       <section class="project-info">
         <div class="image-box">
-          <img src="https://picsum.photos/200" alt="Placeholder image" />
+          <NuxtImg src="https://picsum.photos/200" alt="Placeholder image" />
         </div>
         <article>
           <h2>
@@ -26,7 +26,7 @@
 
       <section class="project-info">
         <div class="image-box"> <!-- to adjust image as a content model w/in flex-item -->
-          <img src="~/assets/images/ritual.png" alt="Video Color Analyzer Preview">
+          <NuxtImg src="/ritual.png" alt="Video Color Analyzer Preview" />
         </div>
         <article>
           <h2>Video Color Analyzer</h2>
@@ -47,7 +47,7 @@
       
       <section class="project-info">
         <div class="image-box">
-          <img src="~/assets/images/geospatial_image.jpg" alt="Route Optimization Preview">
+          <NuxtImg src="/geospatial_image.jpg" alt="Route Optimization Preview">
         </div>
         <article>
           <h2>
