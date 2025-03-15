@@ -110,10 +110,14 @@ export default {
   .box-card-main {
     padding: 1em;
     margin: 0;
+    width: 325px;
+
 
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    box-sizing: border-box;
   }
 
   .box-card-main:hover {
