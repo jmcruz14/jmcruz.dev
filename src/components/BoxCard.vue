@@ -17,7 +17,7 @@
   </div>
 
   <!-- Modal Component -->
-  <div v-if="isModalOpen" class="modal-overlay">
+  <div v-if="isModalOpen" class="modal-overlay" @click.self="isModalOpen = false">
     <div class="modal-content">
       <div class="modal-header">
         <h2>{{ title }}</h2>
