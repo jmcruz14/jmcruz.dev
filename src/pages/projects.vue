@@ -4,164 +4,74 @@
     <!-- Tab Links -->
     <Tabs :selected-tab="selectedTab" @change-tab="(e) => selectedTab = e"/>
     
-    <section class="project-content animate-opacity" :class="{hidden: selectedTab === 'softwareTab' ? false : true}">
-      
-      <section class="project-info">
-        <div class="image-box">
-          <NuxtImg src="https://picsum.photos/200" alt="Placeholder image" />
-        </div>
-        <article>
-          <h2>
-            Project Barako
-            <i class="las la-tools"></i>
-          </h2>
-          <p>
-            A map project currently utilizing a React, Node, and Supabase (PostgreSQL) stack to construct
-            a publicly accessible site displaying available local cafés in the Philippines, aimed at
-            a user-friendly approach to enable logging and recording of visited cafés on top of a social
-            media layer.
-          </p>
-        </article>
-      </section>
+    <section
+      class="project-grid animate-opacity"
+      :class="{hidden: selectedTab === 'softwareTab' ? false : true}"
+    >
+      <BoxCard 
+        imgSrc="/ritual.png"
+        title="Video Color Analyzer"
+        projectYear=2023
+        description="Python script using OpenCV-Python, Pillow, and various preprocessing & processing packages to return the most frequent
+              colors in a video file."
+        githubLink="https://github.com/jmcruz14/dominant_color_analyzer"
+      />
+      <BoxCard 
+        imgSrc="/geospatial_image.jpg"
+        title="Route Optimizer Program"
+        projectYear=2022
+        description="Geospatial Navigation program utilizing Google Geocoder and MapQuest APIs using Dash Plotly framework."
+      />
 
-      <section class="project-info">
-        <div class="image-box"> <!-- to adjust image as a content model w/in flex-item -->
-          <NuxtImg src="/ritual.png" alt="Video Color Analyzer Preview" />
-        </div>
-        <article>
-          <h2>Video Color Analyzer</h2>
-          <h4>April 18, 2023</h4>
-          <p>
-              Python script using OpenCV-Python, Pillow, and various preprocessing & processing packages to return the most frequent
-              colors in a video file.
-          </p>
-          <nav class="project-links">
-              <ul>
-                  <li class="github-link">
-                      <a href="https://github.com/jmcruz14/dominant_color_analyzer">GitHub</a>
-                  </li>
-              </ul>
-          </nav>
-        </article>
-      </section>
-      
-      <section class="project-info">
-        <div class="image-box">
-          <NuxtImg src="/geospatial_image.jpg" alt="Route Optimization Preview">
-        </div>
-        <article>
-          <h2>
-            Route Optimizer Program for Last-Mile Delivery
-          </h2>
-          <h4>
-            June 2022
-          </h4>
-          <p>
-            Geospatial Navigation program utilizing Google Geocoder and MapQuest APIs using Dash Plotly framework.
-          </p>
-        </article>
-      </section>
-      
-      <section class="see-more">
-        <NuxtLink
-          href="https://github.com/jmcruz14?tab=repositories"
-          target="_blank"
-        >
-          <button type="button">
-            <img src="~/assets/images/github_icon.svg" />
-            <span>See more at GitHub</span>
-          </button>
-        </NuxtLink>
-      </section>
     </section>
+      
 
-    <section class="analytics-content animate-opacity" :class="{hidden: selectedTab === 'dataTab' ? false : true}">
-
-      <section class="project-info">
-        <div class="image-box">
-          <img src="~/assets/images/dashboard_prev.png" alt="Top 250 Dashboard" />
-        </div>
-        <article>
-          <h2>
-            Letterboxd List Dashboard
-            <!-- <i class="las la-tools"></i> -->
-          </h2>
-          <p>
-            A project built using the NuxtJS, FastAPI, and MongoDB stack with the goal of
+    <section 
+      class="project-grid animate-opacity" 
+      :class="{hidden: selectedTab === 'dataTab' ? false : true}"
+    >
+      <BoxCard 
+        imgSrc="/dashboard_prev.png"
+        title="Letterboxd List Dashboard"
+        projectYear=2024
+        description="A project built using the NuxtJS, FastAPI, and MongoDB stack with the goal of
             featuring a Letterboxd list according to its observed statistical data.
 
-            The project utilizes a personal Top 250 list as a starting point for this project.
-          </p>
-          <nav class="project-links">
-            <ul>
-              <li class="github-link">
-                <a href="https://github.com/jmcruz14/top-250-website">GitHub</a>
-              </li>
-							<li class="blog-link">
-                <a href="https://medium.com/@jcmcruz14/documenting-projects-ep-1-the-letterboxd-list-dashboard-603075a4f869" target="_blank" rel="noopener noreferrer">Blog</a>
-              </li>
-            </ul>
-          </nav>
-        </article>
-      </section>
-      
-      <section class="project-info">
-        <div class="image-box">
-          <img src="~/assets/images/top_250.jpeg" alt="Top 250 Letterboxd Preview">
-        </div>
-        <article>
-          <h2>
-            Analysis of the Top 250 Filipino Movies on Letterboxd
-          </h2>
-          <h4>
-            March 29, 2023
-          </h4>
-          <p>
-            An Exploratory Data Analysis of the 'Top 250 Filipino Movies' on social
-            media website Letterboxd.
-          </p>
-          <nav class="project-links">
-            <ul>
-              <li class="github-link">
-                <a href="https://github.com/jmcruz14/top_250_filipino_eda">GitHub</a>
-              </li>
-            </ul>
-          </nav>
-        </article>
-      </section>
-      
-      <section class="project-info">
-        <div class="image-box">
-          <img src="~/assets/images/phr4r_logo.png" alt="Reddit R4R Webscrape Preview">
-        </div>
-        <article>
-          <h2>
-            r/phr4r webscrape and analysis
-          </h2>
-          <h4>
-            July 15, 2022
-          </h4>
-          <p>
-            A study of the r/phr4r subreddit's demographics and other observable trends through data webscraped from June 15 to 22, 2022.
-            Data webscraped using the pRAW package and analyzed with pandas and matplotlib.
-          </p>
-          <nav class="project-links">
-            <ul>
-              <li class="github-link">
-                <a href="https://github.com/jmcruz14/r4r_webscraper_app" target="_blank" rel="noopener noreferrer">GitHub</a>
-              </li>
-              <li class="blog-link">
-                <a href="https://medium.com/@carlczech/the-underlying-trends-of-phr4r-515314ceed43" target="_blank" rel="noopener noreferrer">Blog</a>
-              </li>
-            </ul>
-          </nav>
-        </article>
-      </section>
+            The project utilizes a personal Top 250 list as a starting point for this project."
+        githubLink="https://github.com/jmcruz14/top-250-website"
+        blogLink="https://medium.com/@jcmcruz14/documenting-projects-ep-1-the-letterboxd-list-dashboard-603075a4f869"
+      />
 
-      <div style="border: 1px solid grey; border-radius: 5px; padding: 1.5em; display: flex; gap: 0.75em; background-color: rgb(237, 237, 237); align-items: center">
-        <i class="las la-exclamation-triangle" style="font-size: 32px;"></i>
-        <span style="font-weight: 300; font-size: 26px">More data-powered projects coming soon!</span>
-      </div>
+      <BoxCard 
+        imgSrc="/top_250.jpeg"
+        title="Letterboxd List Analysis"
+        projectYear=2023
+        description="An Exploratory Data Analysis of the 'Top 250 Filipino Movies' on social
+            media website Letterboxd."
+        githubLink="https://github.com/jmcruz14/top_250_filipino_eda"
+      />
+
+      <BoxCard 
+        imgSrc="/phr4r_logo.png"
+        title="r4r webscrape-analysis"
+        projectYear=2022
+        description="A study of the r/phr4r subreddit's demographics and other observable trends through data webscraped from June 15 to 22, 2022.
+            Data webscraped using the pRAW package and analyzed with pandas and matplotlib."
+        githubLink="https://github.com/jmcruz14/top_250_filipino_eda"
+        blogLink="https://medium.com/@carlczech/the-underlying-trends-of-phr4r-515314ceed43"
+      />
+    </section>
+
+    <section class="see-more">
+      <NuxtLink
+        href="https://github.com/jmcruz14?tab=repositories"
+        target="_blank"
+      >
+        <button type="button">
+          <img src="~/assets/images/github_icon.svg" />
+          <span>See more at GitHub</span>
+        </button>
+      </NuxtLink>
     </section>
     
   </main>
@@ -171,10 +81,12 @@
 import { definePageMeta, useSeoMeta } from '#imports';
 import { ref, onMounted } from 'vue';
 
+import BoxCard from '@/components/BoxCard';
 import Tabs from '@/components/tabs/project-tabs'
 
 export default {
   components: {
+    BoxCard,
     Tabs
   },
   setup () {
@@ -215,6 +127,13 @@ export default {
 
   .hidden {
     display: none !important;
+  }
+
+  /* Project Content Test */
+  section.project-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 6em;
   }
 
   /* Project Content */
