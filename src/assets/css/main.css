@@ -2,7 +2,7 @@
 :root {
   --font-family: 'Raleway', 'Inter', Arial, Avenir, Helvetica, sans-serif;
   --tw-gradient-from: #E5E4E2; /* Example value */
-  --tw-gradient-to: #FFFFFF; /* Example value */
+  --tw-gradient-to: #F9F8F8; /* Example value */
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 

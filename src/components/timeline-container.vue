@@ -2,8 +2,6 @@
   <div 
     class="container"
     :style="{'background-color': workTypeColor(workType)}"
-    @mouseenter="toggleDivOpen"
-    @mouseleave="toggleDivClose"
   >
     <img 
       v-if="workLogoImage" 
@@ -26,12 +24,15 @@
       </hgroup>
     </section>
     
-    <div 
-      v-if="hoverOpen & hasInfo"
-      class="hover-info" 
-    >
+    <!-- extra info -->
+     <!-- TODO: re-enable later -->
+    <!-- <div style="width: 100%" v-if="hasInfo">
+      <div style="font-size:24px;width:100%; display:flex; justify-content: space-around;">
+        <i class="las la-angle-double-down"></i>
+        <span>More info</span>
+      </div>
       <slot name="hover-info" />
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -83,8 +84,8 @@ export default {
     }
 
     const workTypeColor = (workType) => {
-      if (workType === 'volunteer') return 'white'
-      return '#C7C7C7'
+      // if (workType === 'volunteer') return 'white'
+      return '#F9F8F8'
     }
 
     return {
@@ -137,31 +138,31 @@ h4 {
   flex-direction: row;
   align-items: center;
   gap: 1em;
-  width: 45%;
+  /* width: 45%; */
   padding: 20px;
+  height: 90px;
 
   background-color: #C7C7C7;
   border: 1px solid #737373;
   border-radius: 10px;
 }
 
-.container:hover {
+/* .container:hover {
   background-color: rgba(150, 150, 150, 0.813) !important;
   cursor: pointer;
-}
+} */
 
-.container > section {
+.container section {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.container > img {
+.container img {
     width: 20%;
-    height: 20%;
   }
 
-.container > section > ul {
+.container section > ul {
   padding-left: 20px;
 }
 

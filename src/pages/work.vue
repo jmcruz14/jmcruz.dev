@@ -47,31 +47,30 @@
       </div>
     </div>
     
+    <h2 style="margin: 0 0 0.5em 0; padding: 0">Timeline</h2>
     <div class="timeline">
-      <h2 style="margin: 0 0 0.5em 0; padding: 0">Timeline</h2>
-      <div style="display: flex; gap: 1em">
-        <div style="display: flex; gap: 10px; align-items: start;">
-          <div 
-            class="box" 
-            style="background-color: #C7C7C7;"
-          />
-          <span>Paid Work</span>
-        </div>
 
-        <div style="display: flex; gap: 10px; align-items: start;">
-          <div 
-            class="box" 
-            style="background-color: white;"
-          />
-          <span>Volunteer</span>
-        </div>
-      </div>
+      <timelineContainer
+        work-logo-url="https://upload.wikimedia.org/wikipedia/commons/a/aa/EngageMedia_Logo.jpg"
+        company="EngageMedia"
+        title="Django Developer"
+        start-date="March 2025"
+        work-type="work"
+        :has-info="true"
+      >
+        <template #hover-info>
+          <div style="padding: 1em">
+            <p>Currently handling milestone developments for EngageMedia's video platform, Cinemata.</p>
+          </div>
+        </template>
+      </timelineContainer>
 
       <timelineContainer
         work-logo-url="https://m-cdn.flipboard.social/accounts/avatars/111/537/184/025/760/825/original/a44d96f68b267301.png"
         company="Omdena AI"
         title="Volunteer"
         start-date="July 2024"
+        end-date="March 2025"
         work-type="volunteer"
         :has-info="true"
       >
@@ -80,7 +79,14 @@
             <h4 style="margin: 0">
               Projects Done
             </h4>
-            1. <span>Housing Affordability Analysis in the Greater Parisian Region</span>
+            <ol>
+              <li>
+                <span>Housing Affordability Analysis in the Greater Parisian Region</span>
+              </li>
+              <li>
+                <span>Predicting Air Pollution Levels in Mexico</span>
+              </li>
+            </ol>
           </div>
         </template>
       </timelineContainer>
@@ -215,10 +221,12 @@ export default {
   }
   
   .timeline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1200px;
+    display: grid;
+    grid-template-columns: auto auto;
+
+    /* flex-direction: column;
+    align-items: center; */
+    max-width: 70%;
     gap: 0.5rem;
     margin: 0;
   }
