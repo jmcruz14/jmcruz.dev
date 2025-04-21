@@ -3,47 +3,24 @@
 
     <div class="skills">
       <h2>Skills</h2>
-      <div class="skills-showcase">
-        <section class="skill-box">
-          <img src="~/assets/images/skills/html.png">
-          HTML
-        </section>
-        <section class="skill-box">
-          <img src="~/assets/images/skills/css.png">
-          CSS
-        </section>
-        <section class="skill-box">
-          <img src="~/assets/images/skills/js.png">
-          JS
-        </section>
-        <section class="skill-box">
-          <img src="~/assets/images/skills/postgresql.png">
-          PostgreSQL
-        </section>
-        <section class="skill-box">
-          <img src="~/assets/images/skills/python.png">
-          Python
-        </section>
-        <section class="skill-box">
-          <img src="~/assets/images/skills/vue-logo.png">
-          Vue 3
-        </section>
-        <section class="skill-box">
-          <img src="~/assets/images/skills/git.png">
-          Git
-        </section>
-        <section class="skill-box">
-          <img src="~/assets/images/skills/React-icon.svg.png">
-          React
-        </section>
-        <section class="skill-box">
-          <img src="~/assets/images/skills/postman-icon.svg">
-          Postman
-        </section>
-        <section class="skill-box">
-          <img src="~/assets/images/skills/docker_logo.webp">
-          Docker
-        </section>
+      <div class="developer-text">
+        <ul>
+          <li>
+            <b>Programming Languages</b>: <span>Python, JavaScript, HTML&CSS</span>
+          </li>
+          <li>
+            <b>CI/CD</b>: <span>Git, Docker, Postman</span>
+          </li>
+          <li>
+            <b>Databases</b>: <span>PostgreSQL, Redis, MongoDB</span>
+          </li>
+          <li>
+            <b>Frameworks</b>: <span>Django, Vue, React</span>
+          </li>
+          <li>
+            <b>Visualization</b>: <span>Metabase, Streamlit, Matplotlib, d3.js</span>
+          </li>
+        </ul>
       </div>
     </div>
     
