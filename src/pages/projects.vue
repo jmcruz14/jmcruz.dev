@@ -2,7 +2,7 @@
   <main class="animate-opacity projects" id="projects">
 
     <!-- Tab Links -->
-    <Tabs :selected-tab="selectedTab" @change-tab="(e: string) => selectedTab = e"/>
+    <Tabs :selected-tab="selectedTab" @change-tab="(e) => selectedTab = e"/>
     
     <section
       class="project-grid animate-opacity"
@@ -77,7 +77,7 @@
   </main>
 </template>
 
-<script lang="ts">
+<script>
 import { definePageMeta, useSeoMeta } from '#imports';
 import { ref, onMounted } from 'vue';
 
@@ -100,9 +100,9 @@ export default {
       }
     )
 
-    const softwareTab = ref<null>(null);
-    const dataTab = ref<null>(null);
-    const selectedTab = ref<string>('softwareTab');
+    const softwareTab = ref(null);
+    const dataTab = ref(null);
+    const selectedTab = ref('softwareTab');
 
     return {
       softwareTab,
