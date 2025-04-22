@@ -3,20 +3,27 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'node-server'
   },
+
   devtools: { enabled: true },
   ssr: true,
   spaLoadingTemplate: false,
+
   plugins: [
     '~/plugins/analytics.client.js',
   ],
+
   srcDir: 'src/',
+
   modules: [
     '@nuxt/image',
   ],
+
   alias: {
     "@/": "./src"
   },
+
   css: ['@/assets/css/main.css'],
+
   image: {
     dir: 'assets/images',
     screens: {
@@ -30,6 +37,12 @@ export default defineNuxtConfig({
       '3xl': 1920,
     },
   },
+
+  typescript: {
+    builder: "vite",
+    typeCheck: true,
+  },
+
   app: {
     head: {
       htmlAttrs: {
@@ -63,4 +76,6 @@ export default defineNuxtConfig({
       ],
     },
   },
+
+  compatibilityDate: '2025-04-22',
 })

@@ -120,7 +120,6 @@
 
 <script>
 import timelineContainer from '~/components/timeline-container.vue';
-import { definePageMeta, useSeoMeta } from '#imports';
 
 export default {
   components: {

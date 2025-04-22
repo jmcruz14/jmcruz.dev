@@ -3,8 +3,6 @@
 </template>
 
 <script lang="ts">
-import { definePageMeta, useSeoMeta } from '#imports';
-
 export default {
   setup () {
     definePageMeta({ layout: 'generic' })

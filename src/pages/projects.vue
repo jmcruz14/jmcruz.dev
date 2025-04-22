@@ -78,7 +78,6 @@
 </template>
 
 <script>
-import { definePageMeta, useSeoMeta } from '#imports';
 import { ref, onMounted } from 'vue';
 
 import BoxCard from '@/components/BoxCard';

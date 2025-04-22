@@ -44,8 +44,6 @@
 </template>
 
 <script>
-import { definePageMeta, useSeoMeta } from '#imports';
-
 export default {
   setup () {
     definePageMeta(
