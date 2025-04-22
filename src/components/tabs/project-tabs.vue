@@ -18,25 +18,28 @@
   </div>
 </template>
 
-<script>
-import { ref, computed } from 'vue'
+<script lang="ts">
+import type { PropType } from 'vue';
+import { ref, computed, defineComponent } from 'vue'
 
 export default {
   props: {
     selectedTab: {
-      type: String,
+      type: String as PropType<string>,
       default: 'softwareTab',
     }
   },
-  emits: ['change-tab'],
+  emits: {
+    'change-tab': (tab: string) => true
+  },
   setup (props, { emit }) {
     const currentTab = computed({
       get: () => props?.selectedTab,
-      set: (val) => emit('change-tab', val)
+      set: (val: string) => emit('change-tab', val)
     });
     // const tabDesc = ref(`I think developing software through programming is just as important as analyzing, building, and preserving data systems. Here is a collection of work that I'm proud of.`)
 
-    const selectTab = (event, tabName) => {
+    const selectTab = (event: Event, tabName: string): void => {
       currentTab.value = tabName;
 
       // switch (tabName) {

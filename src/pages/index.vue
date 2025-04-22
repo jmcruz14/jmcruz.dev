@@ -2,21 +2,8 @@
   <NuxtPage />
 </template>
 
-<script>
+<script lang="ts">
 import { definePageMeta, useSeoMeta } from '#imports';
-
-// export default (opts) => {
-//   definePageMeta({
-//     layout: opts.layout || 'default',
-//   });
-
-//   useSeoMeta({
-//     title: opts.title || 'Home page title',
-//     description: opts.description || 'Home page description',
-//     image: opts.image || 'https://via.placeholder.com/1200x630',
-//   });
-// };
-
 
 export default {
   setup () {

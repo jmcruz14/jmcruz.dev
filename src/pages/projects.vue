@@ -2,7 +2,7 @@
   <main class="animate-opacity projects" id="projects">
 
     <!-- Tab Links -->
-    <Tabs :selected-tab="selectedTab" @change-tab="(e) => selectedTab = e"/>
+    <Tabs :selected-tab="selectedTab" @change-tab="(e: string) => selectedTab = e"/>
     
     <section
       class="project-grid animate-opacity"
@@ -11,7 +11,7 @@
       <BoxCard 
         imgSrc="/ritual.png"
         title="Video Color Analyzer"
-        projectYear=2023
+        :projectYear=2023
         description="Python script using OpenCV-Python, Pillow, and various preprocessing & processing packages to return the most frequent
               colors in a video file."
         githubLink="https://github.com/jmcruz14/dominant_color_analyzer"
@@ -19,7 +19,7 @@
       <BoxCard 
         imgSrc="/geospatial_image.jpg"
         title="Route Optimizer Program"
-        projectYear=2022
+        :projectYear=2022
         description="Geospatial Navigation program utilizing Google Geocoder and MapQuest APIs using Dash Plotly framework."
       />
 
@@ -33,7 +33,7 @@
       <BoxCard 
         imgSrc="/dashboard_prev.png"
         title="Letterboxd List Dashboard"
-        projectYear=2024
+        :projectYear=2024
         description="A project built using the NuxtJS, FastAPI, and MongoDB stack with the goal of
             featuring a Letterboxd list according to its observed statistical data.
 
@@ -45,7 +45,7 @@
       <BoxCard 
         imgSrc="/top_250.jpeg"
         title="Letterboxd List Analysis"
-        projectYear=2023
+        :projectYear=2023
         description="An Exploratory Data Analysis of the 'Top 250 Filipino Movies' on social
             media website Letterboxd."
         githubLink="https://github.com/jmcruz14/top_250_filipino_eda"
@@ -54,7 +54,7 @@
       <BoxCard 
         imgSrc="/phr4r_logo.png"
         title="r4r webscrape-analysis"
-        projectYear=2022
+        :projectYear=2022
         description="A study of the r/phr4r subreddit's demographics and other observable trends through data webscraped from June 15 to 22, 2022.
             Data webscraped using the pRAW package and analyzed with pandas and matplotlib."
         githubLink="https://github.com/jmcruz14/top_250_filipino_eda"
@@ -77,7 +77,7 @@
   </main>
 </template>
 
-<script>
+<script lang="ts">
 import { definePageMeta, useSeoMeta } from '#imports';
 import { ref, onMounted } from 'vue';
 
@@ -100,9 +100,9 @@ export default {
       }
     )
 
-    const softwareTab = ref(null);
-    const dataTab = ref(null);
-    const selectedTab = ref('softwareTab');
+    const softwareTab = ref<null>(null);
+    const dataTab = ref<null>(null);
+    const selectedTab = ref<string>('softwareTab');
 
     return {
       softwareTab,

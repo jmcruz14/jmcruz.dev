@@ -15,7 +15,7 @@
             <b>Databases</b>: <span>PostgreSQL, Redis, MongoDB</span>
           </li>
           <li>
-            <b>Frameworks</b>: <span>Django, Vue, React</span>
+            <b>Frameworks</b>: <span>Python (FastAPI, Django), JavaScript (Vue, React)</span>
           </li>
           <li>
             <b>Visualization</b>: <span>Metabase, Streamlit, Matplotlib, d3.js</span>

@@ -70,7 +70,7 @@
 	</nav>
 </template>
 
-<script>
+<script lang="ts">
 import { ref, onMounted } from "vue";
 import { useRoute, useRouter, onBeforeRouteUpdate } from "vue-router";
 
@@ -78,7 +78,7 @@ export default {
     setup() {
         const route = useRoute();
         const router = useRouter();
-        const activeLink = ref(null);
+        const activeLink = ref<null>(null);
 
         onBeforeRouteUpdate((to, from) => {
             console.warn("navigation-to", to);

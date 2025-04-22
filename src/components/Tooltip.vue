@@ -18,38 +18,46 @@
 
 </template>
 
-<script>
-import { ref, computed, toRef } from 'vue'
+<script lang="ts">
+import type { PropType } from 'vue'
+import { ref, computed, toRef, defineComponent } from 'vue';
+
+interface Props {
+  text: string | null
+  fontSize: string
+  openDelay: number
+  closeDelay: number
+}
 
 export default {
   props: {
     text: {
-      type: String,
+      type: String as PropType<string | null>,
       default: null
     },
     fontSize: {
-      type: String,
+      type: String as PropType<string>,
       default: '16px'
     },
     openDelay: {
-      type: Number,
+      type: Number as PropType<number>,
       default: 100
     },
     closeDelay: {
-      type: Number,
+      type: Number as PropType<number>,
       default: 100
     }
   },
-  setup (props, { emit }) {
-    const open = ref(false);
-    const onMouseEnter = () => {
+  setup (props: Props, { emit }) {
+    const open = ref<boolean>(false);
+    const onMouseEnter = (): void => {
       if (open?.value) {
         return
       }
       open.value = true
     }
 
-    const onMouseLeave = () => {
+    const onMouseLeave = (): void => {
       if (!open.value) { 
         return
       }

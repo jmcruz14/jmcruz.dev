@@ -1,7 +1,7 @@
 <template>
   <div 
     class="container"
-    :style="{'background-color': workTypeColor(workType)}"
+    :style="{'background-color': workTypeColor}"
   >
     <img 
       v-if="workLogoImage" 
@@ -36,10 +36,13 @@
   </div>
 </template>
 
-<script>
-import { ref } from 'vue';
+<script lang="ts">
+import type { PropType } from 'vue';
+import { ref, defineComponent } from 'vue';
 
-export default {
+
+export default defineComponent({
+  // defineComponent() enables type inference so the current code doesn't have to be written redundantly in that scenario
   props: {
     workLogoImage: {
       type: String,
@@ -66,7 +69,7 @@ export default {
       default: ''
     },
     workType: {
-      type: String,
+      type: String as PropType<string>,
       default: 'paid'
     },
     hasInfo: {
@@ -75,28 +78,24 @@ export default {
     }
   },
   setup (props, { emit }) {
-    const hoverOpen = ref(false);
-    const toggleDivOpen = () => {
+    const hoverOpen = ref<boolean>(false);
+    const toggleDivOpen = (): void => {
       hoverOpen.value = true;
     }
-    const toggleDivClose = () => {
+    const toggleDivClose = (): void => {
       hoverOpen.value = false;
     }
-
-    const workTypeColor = (workType) => {
-      // if (workType === 'volunteer') return 'white'
-      return '#F9F8F8'
-    }
-
+    const workTypeColor: string = '#F9F8F8';
+    
     return {
       toggleDivOpen,
       toggleDivClose,
-
+    
       workTypeColor,
       hoverOpen,
     }
   }
-}
+})
 
 </script>
 

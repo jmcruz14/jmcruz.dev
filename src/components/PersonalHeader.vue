@@ -51,7 +51,7 @@
   </header>
 </template>
 
-<script>
+<script lang="ts">
 import Tooltip from './Tooltip.vue'
 
 export default {

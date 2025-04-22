@@ -62,41 +62,52 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import type { PropType } from 'vue';
 import { ref } from 'vue';
+
+interface Props {
+  imgSrc?: string | null
+  title: string
+  projectYear: number,
+  description?: string | null
+  githubLink?: string | null
+  blogLink?: string | null
+  demoLink?: string | null
+}
 
 export default {
   props: {
     imgSrc: {
-      type: String,
+      type: String as PropType<string | null>,
       default: null
     },
     title: {
-      type: String,
+      type: String as PropType<string>,
       default: "Default Title"
     },
     projectYear: {
-      type: Number,
+      type: Number as PropType<number>,
       default: 2025
     },
     description: {
-      type: String
+      type: String as PropType<string | null>
     },
     githubLink: {
-      type: String,
+      type: String as PropType<string | null>,
       default: null
     },
     blogLink: {
-      type: String,
+      type: String as PropType<string | null>,
       default: null
     },
     demoLink: {
-      type: String,
+      type: String as PropType<string | null>,
       default: null
     }
   },
-  setup () {
-    const isModalOpen = ref(false);
+  setup (props: Props) {
+    const isModalOpen = ref<boolean>(false);
 
     return {
       isModalOpen
