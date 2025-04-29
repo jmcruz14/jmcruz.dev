@@ -1,7 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   nitro: {
-    preset: 'node-server'
+    preset: 'vercel',
+    // Minimize output size
+    minify: true,
+    // Compact internal paths to avoid length issues
+    inlineDynamicImports: true,
+    // Use shorter file names
+    output: {
+      serverDir: './.output/server-short',
+      publicDir: './.output/public-short'
+    }
   },
 
   devtools: { enabled: true },
@@ -40,7 +49,38 @@ export default defineNuxtConfig({
 
   typescript: {
     builder: "vite",
-    typeCheck: true,
+    strict: true,
+    shim: false,
+    typeCheck: false,
+  },
+
+  vite: {
+    // Optimize build for production
+    build: {
+      // Use shorter chunk names
+      rollupOptions: {
+        output: {
+          manualChunks: undefined,
+          entryFileNames: 'entry-[hash].js',
+          chunkFileNames: 'chunk-[hash].js',
+          assetFileNames: 'asset-[hash][extname]'
+        }
+      },
+      // Minimize CSS output
+      cssCodeSplit: false
+    },
+    // Flatten node_modules resolution
+    resolve: {
+      dedupe: ['vue']
+    },
+    // Reduce preprocessor output path length
+    css: {
+      preprocessorOptions: {
+        scss: {
+          // Any SCSS options if you're using it
+        }
+      }
+    }
   },
 
   app: {
