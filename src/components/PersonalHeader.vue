@@ -41,7 +41,7 @@
         </li>
         <li>
           <Tooltip text="Resume" fontSize="14px">
-            <NuxtLink to="/jccruz_resume.pdf" download="RESUME - JUAN CARLOS CRUZ" class="download-link">
+            <NuxtLink to="/jccruz_resume.pdf" download="RESUME - JUAN CARLOS CRUZ" class="download-link" external>
               <i class="las la-file-alt"></i>
             </NuxtLink>
           </Tooltip>
