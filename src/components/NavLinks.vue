@@ -80,12 +80,6 @@ export default {
         const router = useRouter();
         const activeLink = ref(null);
 
-        onBeforeRouteUpdate((to, from) => {
-            console.warn("navigation-to", to);
-            console.warn("navigation-from", from);
-            console.warn("route-data", route);
-        });
-
         // Check if the current URL ends with "index.html"
         // if (currentUrl.endsWith("index.html") || currentUrl.endsWith("/")) {
         //   // If yes, set the text-decoration of the element with href "index.html" to "underline"
